@@ -22,17 +22,17 @@
     <!--[if lt IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <page-ribbon></page-ribbon>
-    <div ui-view="navbar" ng-cloak></div>
-    <div class="container">
-        <div class="well" ui-view="content">
+    <!--<page-ribbon></page-ribbon>-->
+    <!--<div ui-view="navbar" ng-cloak></div>-->
+    <!--<div class="container">-->
+        <div class="" ui-view="content">
             <!-- Angular views -->
         </div>
 
-        <div class="footer" ng-cloak>
-            <p data-translate="footer">This is your footer</p>
-        </div>
-    </div>
+        <!--<div class="footer" ng-cloak>-->
+            <!--<p data-translate="footer">This is your footer</p>-->
+        <!--</div>-->
+    <!--</div>-->
 
     <!-- Google Analytics: uncomment and change UA-XXXXX-X to be your site's ID.
     <script>
@@ -73,6 +73,7 @@
     <!-- build:js app/app.js  -->
     <!-- inject:js -->
     <script src="app/app.module.js"></script>
+    <script src="app/testSections/testSections.state.js"></script>
     <script src="app/services/user/user.service.js"></script>
     <script src="app/services/profiles/profile.service.js"></script>
     <script src="app/services/profiles/page-ribbon.directive.js"></script>
@@ -105,10 +106,23 @@
     <script src="app/components/util/data-util.service.js"></script>
     <script src="app/components/util/capitalize.filter.js"></script>
     <script src="app/components/util/base64.service.js"></script>
-    <script src="app/components/testDirective/testDirective.service.js"></script>
-    <script src="app/components/testDirective/testDirective.filter.js"></script>
-    <script src="app/components/testDirective/testDirective.directive.js"></script>
-    <script src="app/components/testDirective/testDirective.controller.js"></script>
+    <script src="app/components/testSections/testSections.service.js"></script>
+    <script src="app/components/testSections/testSections.filter.js"></script>
+    <script src="app/components/testSections/testSections.directive.js"></script>
+    <script src="app/components/testSections/testSections.controller.js"></script>
+    <script src="app/components/stickyTitle/stickyTitle.directive.js"></script>
+    <script src="app/components/stickyTitle/stickyTitle.controller.js"></script>
+    <script src="app/components/smoothScroll/smoothScroll.service.js"></script>
+    <script src="app/components/smoothScroll/smoothScroll.directive.js"></script>
+    <script src="app/components/smoothScroll/smoothScroll.controller.js"></script>
+    <script src="app/components/pages/pages.directive.js"></script>
+    <script src="app/components/pages/pages.controller.js"></script>
+    <script src="app/components/pages/page/page.directive.js"></script>
+    <script src="app/components/pages/page/page.controller.js"></script>
+    <script src="app/components/pages/news/article/article.directive.js"></script>
+    <script src="app/components/pages/news/article/article.controller.js"></script>
+    <script src="app/components/nav/nav.directive.js"></script>
+    <script src="app/components/nav/nav.controller.js"></script>
     <script src="app/components/login/login.service.js"></script>
     <script src="app/components/login/login.controller.js"></script>
     <script src="app/components/language/language.service.js"></script>
@@ -185,13 +199,48 @@
 
     <!-- ALC components -->
 
+    <!-- testSections directive -->
+    <!--<script src="app/testSections/testSections.state.js"></script>-->
+    <!--<script src="app/components/testSections/testSections.service.js"></script>-->
+    <!--<script src="app/components/testSections/testSections.controller.js"></script>-->
+    <!--<script src="app/components/testSections/testSections.directive.js"></script>-->
+    <!--<script src="app/components/testSections/testSections.filter.js"></script>-->
+    <!-- end testSections directive -->
+
     <!-- testDirective directive -->
     <!--<script src="app/testDirective/testDirective.js"></script>-->
-    <script src="app/components/testDirective/testDirective.service.js"></script>
-    <script src="app/components/testDirective/testDirective.controller.js"></script>
-    <script src="app/components/testDirective/testDirective.directive.js"></script>
-    <script src="app/components/testDirective/testDirective.filter.js"></script>
+    <!--<script src="app/components/testDirective/testDirective.service.js"></script>-->
+    <!--<script src="app/components/testDirective/testDirective.controller.js"></script>-->
+    <!--<script src="app/components/testDirective/testDirective.directive.js"></script>-->
+    <!--<script src="app/components/testDirective/testDirective.filter.js"></script>-->
     <!-- end testDirective directive -->
+
+    <!-- nav directive -->
+    <!--<script src="app/components/smoothScroll/smoothScroll.service.js"></script>-->
+    <!--<script src="app/components/smoothScroll/smoothScroll.controller.js"></script>-->
+    <!--<script src="app/components/smoothScroll/smoothScroll.directive.js"></script>-->
+    <!-- end smoothScroll directive -->
+
+    <!-- nav directive -->
+    <!--<script src="app/components/nav/nav.controller.js"></script>-->
+    <!--<script src="app/components/nav/nav.directive.js"></script>-->
+    <!-- end nav directive -->
+
+    <!-- pages directive -->
+    <!--<script src="app/components/pages/pages.controller.js"></script>-->
+    <!--<script src="app/components/pages/pages.directive.js"></script>-->
+    <!-- end pages directive -->
+
+
+    <!-- page directive -->
+    <!--<script src="app/components/pages/page/page.controller.js"></script>-->
+    <!--<script src="app/components/pages/page/page.directive.js"></script>-->
+    <!-- end page directive -->
+
+    <!-- article directive -->
+    <!--<script src="app/components/pages/news/article/article.controller.js"></script>-->
+    <!--<script src="app/components/pages/news/article/article.directive.js"></script>-->
+    <!-- end article directive -->
 
     <!-- end ALC components -->
 

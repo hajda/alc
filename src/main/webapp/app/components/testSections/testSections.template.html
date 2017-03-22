@@ -1,0 +1,16 @@
+ALC Test Sections
+<div alc-sticky-titles>
+    <div id="alc-section-title-classes">{{sectionTitleClasses}}</div>
+    <div id="alc-page-section-test">
+        <div class="alc-page-title" data-translate="content.alcTestSectionsTranslate.title"></div>
+        <div class="alc-page-subtitle" data-translate="content.alcTestSectionsTranslate.subtitle"></div>
+        <div ng-repeat="i in ['lauda', 'hunt', 'schumacher']" class="alc-section">
+
+            <div class="alc-sticky-title" ng-class="sectionTitleClasses[$index]" data-translate="content.alcTestSectionsTranslate.sections.{{i}}.sectionTitle"></div>
+            <div class="alc-section-content" data-translate="content.alcTestSectionsTranslate.sections.{{i}}.sectionContent"></div>
+        </div>
+    </div>
+    <div id="alc-bottom-gap"></div>
+    <!--data-translate="content.alcTestSectionsTranslate.sections"-->
+    <div id="alc-header">_</div>
+</div>

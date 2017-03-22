@@ -1,0 +1,22 @@
+<h2>{{article.title}}</h2>
+
+<span>By <strong><a href="">{{article.author}}</a></strong></span>
+<span>at <i>{{article.createdAt}}</i></span>
+<!-- TODO take the datetime apart with a filter and present it properly everywhere -->
+<br>
+<span>last modified at <i>{{article.lastModified}}</i></span>
+<hr>
+
+<h3>{{article.subTitle}}</h3>
+<span>{{article.preface}}</span>
+
+<section ng-repeat="section in article.sections" class="alc-article-section alc-{{section.sectionType || 'normal'}}">
+    <h4>{{section.title}}</h4>
+    <h5>{{section.sectionSubtitle}}</h5>
+    <span ng-repeat="paragraph in section.paragraphs" class="alc-article-paragraph alc-{{paragraph.paragraphType || 'normal'}}">
+        <h6>{{paragraph.paragraphEmphasize}}</h6>
+        <p>{{paragraph.paragraph}}</p>
+    </span>
+</section>
+
+<hr>

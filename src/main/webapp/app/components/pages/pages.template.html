@@ -1,0 +1,38 @@
+<div alc-sticky-titles id="alc-pages" ng-class="{'active-header': scrollDelta == 'small-delta'}">
+    <!-- HOME -->
+    <section id="home" class="alc-page">
+        <alc-home id="home-page-content"></alc-home>
+    </section>
+
+    <!-- NEWS -->
+    <alc-page id="alc-{{content.pages.news.pageId}}-page" class="alc-page"
+              isolate-scope alc-page="content.pages.news"
+    >
+        <page-title>
+            <h1 class="alc-sticky-title" ng-class="sectionTitleClasses[0]"
+                data-translate="content.pages.news.pageTitle"
+            ></h1>
+        </page-title>
+        <page-body>
+            <alc-article ng-repeat="article in content.pages.news.pageContent.articles"
+            ></alc-article>
+        </page-body>
+    </alc-page>
+
+    <!-- Dates -->
+    <alc-page id="alc-{{content.pages.dates.pageId}}-page" class="alc-page"
+              isolate-scope alc-page="content.pages.dates"
+    >
+        <page-title>
+            <h1 class="alc-sticky-title" ng-class="sectionTitleClasses[1]"
+                data-translate="content.pages.dates.pageTitle"
+            ></h1>
+        </page-title>
+        <page-body>
+            <span ng-repeat="date in content.pages.dates.pageContent.tourDates">
+                {{date.tourDate}}
+                <span ng-if="!$last"><br>--------------------------------<br></span>
+            </span>
+        </page-body>
+    </alc-page>
+</div>
