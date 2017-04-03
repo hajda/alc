@@ -145,3 +145,8 @@ Desktop.ini
 # Bower components
 ######################
 src/main/webapp/bower_components
+
+######################
+# Downloaded contents
+######################
+webContents

@@ -13,15 +13,15 @@
 
     function pageDirective() {
         return {
-            restrict: 'E',
+            restrict: 'AE',
             scope: { // isolate$scope
-                page: '=alcPage'
+                page: '=alcPageId'
             },
             controller: 'AlcPageController',
             controllerAs: 'PageCtrl',
             transclude: {
-                'pagetitle': 'pageTitle',
-                'pagebody': 'pageBody'
+                'alcpagetitle': 'alcPageTitle',
+                'alcpagebody': 'alcPageBody'
             },
             templateUrl: 'app/components/pages/page/page.template.html',
             link: function postLink($scope, attribs, $element, ctrl) {

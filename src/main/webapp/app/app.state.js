@@ -15,6 +15,11 @@
                     templateUrl: 'app/layouts/navbar/navbar.html',
                     controller: 'NavbarController',
                     controllerAs: 'vm'
+                },
+                'alcnav@': {
+                    templateUrl: 'app/components/nav/nav.template.html',
+                    controller: 'AlcNavController',
+                    controllerAs: 'NavCtrl'
                 }
             },
             resolve: {
