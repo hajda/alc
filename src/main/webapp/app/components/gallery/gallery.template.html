@@ -1,0 +1,21 @@
+<div ng-if="!selectedAlbum"
+     class="alc-view-albums-list alc-view-alba-list alc-view-album-list"
+>
+
+    <div alc-album-cover-frame
+         ng-repeat="album in alba"
+         ng-click="GalleryCtrl.selectAlbum(album)"
+         src="{{baseUrl + album.coverSrc}}"
+         attachment="fixed"
+         stripe="stripe"
+         class="alc-album-cover"
+         align-image="fill"
+    ></div>
+</div>
+
+<div ng-if="selectedAlbum"
+     class="alc-view-selected-album alc-view-album"
+>
+    <div alc-album class="alc-album"></div>
+</div>
+

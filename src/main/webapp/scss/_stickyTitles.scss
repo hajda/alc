@@ -1,21 +1,45 @@
 .alc-sticky-title {
-    //font-size: 110%;
-    //font-weight: bold;
-    //color: rgb(0, 66, 164);
-    z-index: 9989;
+    position: relative;
+    z-index: 8010;
+    transition: top .4s linear;
+
+    padding-left: $alc-band-logo-width;
+    @media screen and (orientation: landscape) {
+        padding-left: 0px;
+    }
+
+    @media screen and (max-width: 480px) {
+        padding-left: 15px;
+        color: whitesmoke;
+
+        @media screen and (orientation: landscape) {
+            padding-left: 0px;
+        }
+    }
+
+    transition: .4s linear;
     transition: top .4s ease-out;
+
+    &.alc-stick {
+        position: fixed;
+        top: 0px;
+        transition: top .4s linear;
+        @media screen and (orientation: landscape) {
+            display: inline-block;
+            width: 300px;
+            height: 69px;
+            top: inherit;
+            bottom: 150px;
+            left: 45 - 150px;
+            transform: rotate(-90deg);
+        }
+    }
+    &.alc-swim-on {
+        top: -80px;
+        transition: top .4s linear;
+        @media screen and (orientation: landscape) {
+            left: -150 - 80vh;
+        }
+    }
 }
 
-.alc-stick {
-    position: fixed;
-    top: 0;
-    //color: whitesmoke;
-    //background-color: transparent;
-    z-index: 9990;
-    transition: top .4s linear;
-}
-
-.alc-stick.alc-swim-on {
-    top: -80px;
-    transition: top .4s linear;
-}
