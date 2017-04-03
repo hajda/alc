@@ -1,0 +1,5 @@
+<div alc-album ng-repeat="album in albums" class="alc-album">
+    <go-back-button><h2 ng-if="albums.selectedAlbum.id" class="alc-inline">
+        <button ng-click="GalleryCtrl.goBack($event)" class="alc-back-to-album-list"></button>
+    </h2></go-back-button>
+</div>

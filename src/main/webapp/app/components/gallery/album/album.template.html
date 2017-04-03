@@ -1,0 +1,33 @@
+<!-- COVER and METADATA -->
+<div ng-if="albums.selectedAlbum == album || !albums.selectedAlbum">
+    <div class="alc-album-header" ng-class="{'alc-slide-down': !albums.selectedAlbum}">
+        <span ng-transclude="go-back-button" ng-click="albums.selectedAlbum = album" class="go-back-button">No "<---" button is transcluded...</span>
+        <h2 ng-click="albums.selectedAlbum = album" class="alc-album-title">{{album.title}}</h2>
+    <!-- VIEW ALBUM -->
+
+        <!-- TODO refactor content metadata template -->
+        <div class="alc-album-metadata">
+            <div class="alc-album-description">{{album.description}}</div>
+            <div class="alc-album-credits">
+                <!-- TODO refactor credits and creation dates to a directive -->
+                <span>Uploaded by <strong><a href="">{{album.createdBy.firstName + ' ' + article.createdBy.lastName}}</a></strong></span>
+                <span>at <i>{{album.createdAt}}</i></span>
+            </div>
+        </div>
+    </div>
+    <div ng-if="albums.selectedAlbum == album">
+        <div class="alc-album-items">
+            <div alc-album-item ng-repeat="item in albums[$index].items" class="alc-album-item"></div>
+        </div>
+    </div>
+    <div ng-if="!albums.selectedAlbum" ng-click="albums.selectedAlbum = album">
+        <img src="../../../../../webContents/albums/{{album.coverSrc}}"
+             class="alc-album-item-content"
+        />
+    </div>
+</div>
+
+<!-- NOTHING -->
+<div ng-if="albums.selectedAlbum && albums.selectedAlbum != album">
+
+</div>

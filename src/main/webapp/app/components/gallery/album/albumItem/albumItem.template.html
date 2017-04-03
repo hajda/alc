@@ -1,0 +1,23 @@
+<div ng-switch on="item.contentType"
+     class="phx-media-switch-on-content"
+>
+    <div class="phx-media-switch-when-img"
+         ng-switch-when="img"
+    >
+        <a href="../../../../../webContents/albums/{{item.src}}" target="_blank">
+            <img src="../../../../../webContents/albums/{{item.src}}"
+                 id="alc-img-{{albums[$parent].item.title}}"
+                 class="alc-album-item-content"
+            />
+        </a>
+    </div>
+</div>
+<!-- TODO refactor content metadata template -->
+<div class="alc-album-item-metadata">
+    <div class="alc-album-item-description">{{album.description}}</div>
+    <div class="alc-album-item-credits">
+        <!-- TODO refactor credits and creation dates to a directive -->
+        <span>Author: <strong><a href="">{{item.author.firstName + ' ' + item.author.lastName}}</a></strong></span>
+        <span>at <i>{{item.createdAt}}</i></span>
+    </div>
+</div>
