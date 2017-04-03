@@ -9,15 +9,17 @@
         .controller('AlcSmoothScrollController', smoothScrollController)
     ;
 
-    smoothScrollController.$inject = ['$scope', '$window', '$location', 'AlclSmoothScroll'];
+    smoothScrollController.$inject = ['$scope', '$window', '$location', 'AlcSmoothScroll'];
 
-    function smoothScrollController($scope, $window, $location, AlcSmoothScroll) {
+    function smoothScrollController($scope, $window, $location, SmoothScroll) {
         angular.element($window).bind(
             "scroll", function () {
                 if (window.pageYOffset > 0) {
                     $scope.scrollDelta = 'big-delta';
+                    SmoothScroll.scrollDelta = 'big-delta';
                 } else {
                     $scope.scrollDelta = 'small-delta';
+                    SmoothScroll.scrollDelta = 'small-delta';
                 }
                 $scope.$apply();
             }
@@ -25,7 +27,7 @@
 
         $scope.scrollTo = function (eID) {
             var offset = 0;
-            if ($scope.scrollDelta == 'small-delta') { // if the header is big
+            if (SmoothScroll.scrollDelta == 'small-delta') { // if the header is big
                 //offset = 110 - window.pageYOffset; // correct the scroll target, because tha header will be smaller by 60px
             }
 
@@ -34,7 +36,7 @@
             //$location.hash('bottom');
 
             // call $anchorScroll()
-            AlcSmoothScroll.scrollTo(eID, offset);
+            SmoothScroll.scrollTo(eID, offset);
         };
     }
 })();

@@ -1,8 +1,25 @@
+/* ==========================================================================
+Variables
+========================================================================== */
+
+$alc-band-logo-width: 250px;
+
+/* ==========================================================================
+Import partial styles
+========================================================================== */
+@import "alcMain";
 @import "article";
+@import "page";
+@import "pages";
+@import "nav";
+@import "navMobile";
 @import "stickyTitles";
 
+/* ==========================================================================
+basic body setup
+========================================================================== */
 body {
-    background: #fafafa;
+    //background: #fafafa; // Couldn't override in partial, had to put in comment here
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
 }

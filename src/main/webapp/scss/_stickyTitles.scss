@@ -1,21 +1,25 @@
 .alc-sticky-title {
-    //font-size: 110%;
-    //font-weight: bold;
-    //color: rgb(0, 66, 164);
-    z-index: 9989;
+    position: relative;
+    z-index: 8010;
+
+
+    padding-left: $alc-band-logo-width;
+    @media screen and (max-width: 480px) {
+        padding-left: 15px;
+        color: whitesmoke;
+    }
+
+    transition: .4s linear;
     transition: top .4s ease-out;
+
+    &.alc-stick {
+        position: fixed;
+        top: 0px;
+        transition: top .4s linear;
+    }
+    &.alc-swim-on {
+        top: -80px;
+        transition: top .4s linear;
+    }
 }
 
-.alc-stick {
-    position: fixed;
-    top: 0;
-    //color: whitesmoke;
-    //background-color: transparent;
-    z-index: 9990;
-    transition: top .4s linear;
-}
-
-.alc-stick.alc-swim-on {
-    top: -80px;
-    transition: top .4s linear;
-}
