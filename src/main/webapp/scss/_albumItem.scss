@@ -1,0 +1,9 @@
+.alc-album-item {
+    @media screen and (min-width: 481px) {
+        display: inline-block;
+        width: 100%;
+    }
+}
+.alc-album-item-content { // it is used inside AND outside the .alc-album-item elements
+    width: 100%;
+}

@@ -1,0 +1,9 @@
+#alc-gallery {
+    display: inline-block;
+    width: 100%;
+
+    .alc-view-selected-album, .alc-view-album {
+        max-height: 80vh;
+        //overflow-y: scroll;
+    }
+}
