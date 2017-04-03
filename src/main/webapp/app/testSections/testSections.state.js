@@ -20,7 +20,7 @@
                     readableName: 'Test Sections'
                 },
                 views: {
-                    'content@': {
+                    'testsections@': {
                         templateUrl: 'app/testSections/testSections.html'//,
                         // controller: 'HomeController',
                         // controllerAs: 'vm'
