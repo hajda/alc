@@ -13,9 +13,9 @@
 
     function pageDirective() {
         return {
-            restrict: 'E',
+            restrict: 'AE',
             scope: { // isolate$scope
-                page: '=alcPage'
+                page: '=alcPageId'
             },
             controller: 'AlcPageController',
             controllerAs: 'PageCtrl',
