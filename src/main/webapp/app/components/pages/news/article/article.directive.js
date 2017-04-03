@@ -13,7 +13,7 @@
 
     function articleDirective() {
         return {
-            restrict: 'E',
+            restrict: 'AE',
             controller: 'AlcArticleController',
             controllerAs: 'ArticleCtrl',
             templateUrl: 'app/components/pages/news/article/article.template.html',

@@ -1,25 +1,22 @@
-<div id="alc-desktop-header-background" ng-class="{'active-header': scrollDelta == 'small-delta'}"></div>
-<div id="alc-menu-container-flex-wrapper" class="clearfix" ng-show="menuVisibility">
+<!--<div id="alc-desktop-header-background" ng-class="{'active-header': scrollDelta == 'small-delta'}"></div>-->
+<div id="alc-menu-container-flex-wrapper" class="clearfix" ng-class="menu.mobileHide ? 'alc-mobile-hide' : 'alc-mobile-show'">
     <nav id="alc-menu-container" class="clearfix" ng-class="{'active-header': scrollDelta == 'small-delta'}">
-        <ul id="alc-menu" class="clearfix" ng-class="{'active-header': scrollDelta == 'small-delta'}">
-            <!--<li class="alc-menu-item alc-control" ng-click="onMenuItemClick($event, menu.items[$index].targetElementId)">Home</li>-->
-            <li class="alc-menu-item alc-control" ng-click="onMenuItemClick($event, 'body')">Home</li>
-            <li class="alc-menu-item alc-control" ng-click="onMenuItemClick($event, 'news-page-marker')">News</li>
-            <li class="alc-menu-item alc-control" ng-click="onMenuItemClick($event, 'press-page-marker')">Press</li>
-            <li class="alc-menu-item alc-control" ng-click="onMenuItemClick($event, 'media-page-marker')">Media</li>
-            <li class="alc-menu-item alc-control" ng-click="onMenuItemClick($event, 'bio-page-marker')">Bio</li>
-            <li class="alc-menu-item alc-control" ng-click="onMenuItemClick($event, 'disco-page-marker')">Disco</li>
+        <ul alc-smooth-scroll
+            id="alc-menu" class="clearfix" ng-class="{'active-header': scrollDelta == 'small-delta'}"
+        >
+            <li ng-repeat="menuItem in menu.items"
+                ng-click="onMenuItemClick($event, 'alc-' + menuItem.pageId + '-page-marker')"
+                class="alc-menu-item alc-control"
+            >{{menuItem.pageTitle}}</li>
         </ul>
     </nav>
 </div>
 
 <div id="alc-mobile-header-background" ng-class="{'active-header': scrollDelta == 'small-delta'}"></div>
+
 <div id="alc-band-logo-container">
-    <img id="alc-band-logo" src="assets/images/band-logo.png" ng-class="{'active-header': scrollDelta == 'small-delta'}"/>
+    BAND<br>LOGO
+    <!-- TODO provide image <img id="alc-band-logo" src="assets/images/band-logo.png" ng-class="{'active-header': scrollDelta == 'small-delta'}"/>-->
 </div>
+
 <div id="alc-hamburger-menu" ng-click="toggleMenu()" class="glyphicon glyphicon-menu-hamburger"></div>
-<!--<div style="position: fixed; top: 50px; right:250px;">-->
-    <!--MENU VISIBLE: {{menuVisibility}}<br>-->
-    <!--VIEWPORT WIDTH: {{viewportWidth}}px<br>-->
-    <!--SCROLL DELTA: {{scrollDelta}}-->
-<!--</div>-->

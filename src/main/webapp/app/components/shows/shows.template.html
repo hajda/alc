@@ -1,0 +1,7 @@
+<div id="alc-shows-coming-up">
+    <img src="../../webContents/albums/album1/picture1.jpg" width="100%" height="auto" /><!-- TODO from where comes the comin-up image? -->
+</div>
+<div alc-show ng-repeat="show in content.pages.shows.pageContent.shows.slice(1)"
+     class="alc-show"
+     ng-click="ShowCtrl.toggleView()"
+></div>

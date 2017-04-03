@@ -1,8 +1,89 @@
-@import "article";
-@import "stickyTitles";
+/* ==========================================================================
+Variables
+========================================================================== */
 
+$alc-band-logo-width: 250px;
+$nav-height: 69px;
+$massivity: 35px;
+
+  /* ******************* */
+ /*        brands       */
+/* ******************* */
+/* facebook */
+$facebook-flat: #3B5998;
+//$facebook-gradient-dark-shade: #blue;
+//$facebook-gradient-bright-shade: #blue;
+
+/* youtube */ // https://www.youtube.com/yt/brand/color.html
+$youtube-flat: #cd201f;
+$youtube-gradient-dark-shade: #b31217;
+$facebook-gradient-bright-shade: #e52d27;
+
+/* instagram */
+//$facebook-flat: #blue;
+//$facebook-gradient-dark-shade: #blue;
+//$facebook-gradient-bright-shade: #blue;
+
+/* twitter */
+//$facebook-flat: #blue;
+//$facebook-gradient-dark-shade: #blue;
+//$facebook-gradient-bright-shade: #blue;
+
+/* apple */
+//$facebook-flat: #blue;
+//$facebook-gradient-dark-shade: #blue;
+//$facebook-gradient-bright-shade: #blue;
+
+/* spotify */
+//$facebook-flat: #blue;
+//$facebook-gradient-dark-shade: #blue;
+//$facebook-gradient-bright-shade: #blue;
+
+/* soundcloud */
+//$facebook-flat: #blue;
+//$facebook-gradient-dark-shade: #blue;
+//$facebook-gradient-bright-shade: #blue;
+
+/* deezer */
+//$facebook-flat: #blue;
+//$facebook-gradient-dark-shade: #blue;
+//$facebook-gradient-bright-shade: #blue;
+
+/* band camp */
+//$facebook-flat: #blue;
+//$facebook-gradient-dark-shade: #blue;
+//$facebook-gradient-bright-shade: #blue;
+
+/* ==========================================================================
+Import partial styles
+========================================================================== */
+@import "alcMain";
+@import "article";
+@import "page";
+@import "pages";
+@import "nav";
+@import "navMobile";
+@import "stickyTitles";
+@import "gallery";
+@import "album";
+@import "imageFrame";
+@import "albumItem";
+@import "credits";
+@import "deviceMetrics";
+@import "shows";
+@import "show";
+@import "videoThumbnail";
+
+/* ==========================================================================
+Import fonts
+========================================================================== */
+@import url('https://fonts.googleapis.com/css?family=Chivo:300,300i,400,400i,700,700i,900,900i&subset=latin-ext');
+
+/* ==========================================================================
+basic body setup
+========================================================================== */
 body {
-    background: #fafafa;
+    //background: #fafafa; // Couldn't override in partial, had to put in comment here
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
 }

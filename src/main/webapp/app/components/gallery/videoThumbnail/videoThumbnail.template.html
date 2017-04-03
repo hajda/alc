@@ -1,0 +1,31 @@
+   <!--href="{{videoUrl}}"-->
+   <!--target="_blank"-->
+<div class="alc-video-thumbnail-frame"
+     ng-click="playing = !playing"
+>
+    <div ng-if="playing" class="alc-video-wrapper">
+        <iframe class="alc-video-embed" width="304px" height="171px" ng-src="{{trustVideoSrc(videoEmbed)}}" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <img ng-if="!playing"
+         class="alc-video-thumbnail-image"
+         ng-src="{{thumbnailSrc}}"
+    />
+    <div ng-if="!playing"
+         class="alc-video-thumbnail-captions"
+         ng-class="darkFace"
+    >
+        <div class="alc-video-thumbnail-caption">{{thumbnailCaption}}</div>
+        <div class="alc-video-thumbnail-sub-caption">{{thumbnailSubCaption}}</div>
+    </div>
+    <!--<div class="alc-video-thumbnail-open-in-youtube-wrapper">-->
+        <div class="alc-video-thumbanil-open-in-youtube">
+            <a ng-if="!playing"
+               class="alc-video-thumbanil-youtube-link"
+               href="{{videoUrl}}" target="_blank"
+               ng-click="$event.stopPropagation(); window.event.cancelBubble = true;"
+            >
+                <i class="fa fa-youtube-play"></i>
+            </a>
+        </div>
+    <!--</div>-->
+</div>

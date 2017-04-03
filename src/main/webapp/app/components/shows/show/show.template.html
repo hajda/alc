@@ -1,0 +1,88 @@
+<div class="alc-show-time">
+    <div class="alc-show-date">
+        <div class="alc-show-venue-date">{{ShowCtrl.easyDate(show.time.date)}}</div>
+        <div ng-if="ShowCtrl.view.selectedView == ShowCtrl.view.views.extended"
+             class="alc-show-venue-time"
+        >{{show.time.time}}</div>
+        <div ng-if="ShowCtrl.view.selectedView == ShowCtrl.view.views.extended"
+             class="alc-show-venue-datetime"
+        >{{show.time.dateTime}}</div>
+    </div>
+    <div class="alc-show-date-calendar-icon">
+        <!-- TODO get the date into the icon-->
+        <a class="alc-show-date-calendars" href="TODO">
+            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+        </a>
+    </div>
+</div>
+<div class="alc-show-venue-info">
+    <div class="alc-show-venue">
+        <div class="alc-show-venue-name">{{show.venue.name}}</div>
+        <div class="alc-show-venue-website-url">(venue link)<!-- {{show.venue.websiteUrl}} --></div>
+        <div class="alc-show-venue-location-map-reference"
+             ng-if="ShowCtrl.view.selectedView == ShowCtrl.view.views.compact"
+        >
+            <a href="https://goo.gl/maps/GfVY8ERDFQz"
+            >
+                <i class="material-icons">directions</i>
+            </a><!-- {{show.venue.venueAddress}} -->
+        </div>
+    </div>
+    <div class="alc-show-venue-location">
+        <div class="alc-show-venue-location-address"
+             ng-if="ShowCtrl.view.selectedView == ShowCtrl.view.views.extended"
+        >{{show.venue.venueAddress}}</div>
+        <div class="alc-show-venue-location-map-reference"
+             ng-if="ShowCtrl.view.selectedView == ShowCtrl.view.views.extended"
+        >
+            <a href="https://goo.gl/maps/GfVY8ERDFQz"
+               ng-click="$event.stopPropagation()"
+            >
+                <i class="material-icons">directions</i>
+            </a><!-- {{show.venue.venueAddress}} -->
+        </div>
+    </div>
+    <div class="alc-show-venue-event"
+         ng-if="ShowCtrl.view.selectedView == ShowCtrl.view.views.extended && show.venue.venueEvent"
+    >
+        <div class="alc-show-venue-event-name">{{show.venue.venueEvent}}</div>
+        <div class="alc-show-venue-event-web-page-url">
+            (venue event flyer)<!-- {{show.venue.venueEventWebPageUrl}} -->
+        </div>
+    </div>
+</div>
+<div class="alc-show-info">
+    <div class="alc-show-basic-info">
+        <div class="alc-show-name">{{show.event.name}}</div>
+        <div class="alc-show-venue-page">(link to venue show flyer)<!-- TODO the URL of the web page on the venue web site that is about this concrete show --></div>
+    </div>
+    <!-- TODO favour <div class="alc-show-favourite">{{show.event.name}}</div> -->
+    <div ng-if="ShowCtrl.view.selectedView == ShowCtrl.view.views.extended && show.event.description"
+         class="alc-show-description"
+    >{{show.event.description}}</div>
+</div>
+<div class="alc-show-social">
+    <div class="alc-show-social-event-pages">
+        <a class="alc-show-venue-event-socials"
+           href="{{show.social.facebookEventUrl}}">
+            <i class="fa fa-facebook alc-no-color" aria-hidden="true"></i>
+        </a>
+        <a class="alc-show-venue-event-socials"
+           href="{{show.social.googlePlusEventUrl}}"
+        >
+            <iclass="fa fa-google-plus" aria-hidden="true"></i>
+        </a>
+    </div>
+    <div class="alc-show-calendar-event-agenda">
+        <a class="alc-show-venue-event-calendars"
+           href="{{show.calendars.google}}"
+        >
+            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+        </a>
+        <a class="alc-show-venue-event-calendars"
+           href="{{show.calendars.outlook}}"
+        >
+            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+        </a>
+    </div>
+</div>

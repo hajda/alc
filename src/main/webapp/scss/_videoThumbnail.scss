@@ -1,0 +1,226 @@
+/* old browsers can have a hard time rendering fex-box, so a cross-browser workaround for centering everything */
+
+
+.alc-video-thumbnail {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    * {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+
+    width: 304px;
+    height: 171px;
+
+    color: white;
+    * {
+        color: white;
+    }
+    &.dark-face {
+        color: black;
+        * {
+            color: black;
+        }
+    }
+
+    .alc-video-thumbnail-frame {
+        position: relative;
+
+        width: 304px;
+        height: 171px;
+
+        overflow: hidden;
+
+        &:hover {
+            & > .alc-video-thumbnail-image {
+                width: 324px;
+                filter: none;
+            }
+            & > .alc-video-thumbnail-captions {
+                opacity: 0;
+            }
+        }
+
+        .alc-video-thumbnail-image {
+            width: 344px;
+            height: auto;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            filter: blur(.5vw);
+            transition: width .3s ease-out, filter .3s ease-out;
+        }
+
+        .alc-video-thumbnail-captions {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: opacity .2s ease-out;
+
+            .alc-video-thumbnail-caption {
+                font-size: 160%;
+            }
+            .alc-video-thumbnail-caption, .alc-video-thumbnail-sub-caption {
+                width: 294px;
+                text-align: center;
+            }
+        }
+
+        //.alc-video-thumbnail-open-in-youtube-wrapper {
+        //    position: absolute;
+        //    bottom: 1px;
+        //    left: 0;
+        //
+        //    width: 302px;
+        //    height: 40px;
+        //
+        //    background-color: #111111;
+
+            .alc-video-thumbanil-open-in-youtube {
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+
+                width: 40px;
+                height: 40px;
+
+                .alc-video-thumbanil-youtube-link {
+                    display: block;
+                    position: relative;
+
+                    width: inherit;
+                    height: inherit;
+
+                    border-radius: 4px;
+                    //background-color: $youtube-flat;
+                    //background: linear-gradient(to top, $youtube-gradient-dark-shade, $facebook-gradient-bright-shade);
+                    //opacity: .8;
+
+                    .fa-youtube-play {
+                        position: absolute;
+                        //color: white;
+                        font-size: 20px;
+
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+                &:hover {
+                    a {
+                        .fa-youtube-play {
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        //}
+    }
+}
+
+/* old browsers can have a hard time rendering fex-box */
+
+//.alc-video-thumbnail {
+//    display: inline-block;
+//    * {
+//        display: inline-block;
+//    }
+//}
+//.alc-video-thumbnail-frame {
+//    width: 304px; height: 171px; @media (resolution: 1.5dppx) {
+//        width: (304*1.5)px;
+//        height: (171*1.5)px;
+//        //border: solid 5px red;
+//    } @media (resolution: 2dppx) {
+//        width: (304*2)px;
+//        height: (171*2)px;
+//        //border: solid 5px blue;
+//    }
+//
+//    position: relative;
+//
+//    // hide overflowing edges content
+//    overflow: hidden;
+//
+//    // center content
+//    display: flex;
+//    justify-content: center;
+//    align-items: center;
+//
+//    //.alc-video-wrapper {
+//    //    position: relative;
+//    //    width: 0;
+//    //    overflow: visible;
+//    //}
+//
+//    .alc-video-thumbnail-image {
+//        width: 324px; @media (resolution: 1.1dppx) {
+//            width: (304*1.5)px;
+//        } @media (resolution: 2dppx) {
+//            width: (304*2)px;
+//        }
+//
+//        height: auto;
+//
+//        position: absolute;
+//        filter: blur(.5vw);
+//
+//        transition: width .4s ease-out, filter .4s ease-out;
+//    }
+//
+//    &:hover {
+//        &> .alc-video-thumbnail-image {
+//            filter: blur(0);
+//            width: 304px; @media (resolution: 1.1dppx) {
+//                width: (304*1.5)px;
+//            } @media (resolution: 2dppx) {
+//                width: (304*2)px;
+//            }
+//
+//        }
+//        &> .alc-video-thumbnail-captions {
+//            opacity: 0;
+//        }
+//    }
+//
+//
+//    .alc-video-thumbnail-captions {
+//        transition: opacity .4s ease-out;
+//
+//        max-width: 286px; @media (resolution: 1.1dppx) {
+//            max-width: (286*1.5)px;
+//        } @media (resolution: 2dppx) {
+//            max-width: (286*2)px;
+//        }
+//
+//        /* center self */
+//        position: absolute; // somehow this alone puts the caption in center
+//
+//        // center content
+//        display: flex;
+//        flex-direction: column;
+//        justify-content: center;
+//        align-items: center;
+//
+//        /* text format */
+//        font-family: helvetica;
+//        color: white; &.dark-face {
+//            color: black;
+//        }
+//
+//        .alc-video-thumbnail-caption {
+//            font-size: 160%;
+//        }
+//
+//        .alc-video-thumbnail-caption, .alc-video-thumbnail-sub-caption {
+//            text-align: center;
+//        }
+//
+//    }
+//}

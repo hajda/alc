@@ -1,21 +1,8 @@
-.alc-sticky-title {
-    //font-size: 110%;
-    //font-weight: bold;
-    //color: rgb(0, 66, 164);
-    z-index: 9989;
-    transition: top .4s ease-out;
-}
+.alc-article {
+    font-family: 'Chivo', sans-serif;
+    padding: 2vw 10px 2vw 10px;
 
-.alc-stick {
-    position: fixed;
-    top: 0;
-    //color: whitesmoke;
-    //background-color: transparent;
-    z-index: 9990;
-    transition: top .4s linear;
-}
-
-.alc-stick.alc-swim-on {
-    top: -80px;
-    transition: top .4s linear;
+    .alc-article-illustration {
+        width: 100%;
+    }
 }
