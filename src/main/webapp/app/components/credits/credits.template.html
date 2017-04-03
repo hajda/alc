@@ -1,0 +1,11 @@
+<span>By <strong ng-repeat="author in alcCredit.authors">
+    <a href="">{{author.firstName + ' ' + alcCredit.author.lastName}}</a>
+    <span ng-if="!$last">, </span>
+</strong></span>
+<div>at <i>{{alcCredit.time}}</i></div>
+<div class="alc-location">
+    <div class="alc-location-name">{{alcCredit.location.name}}</span>
+    <div class="alc-location-address">{{alcCredit.location.address}}</div>
+    <div class="alc-location-url">{{alcCredit.location.url}}</div>
+</div>
+

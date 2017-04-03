@@ -5,6 +5,7 @@
   "testPath": "src/test/javascript/spec",
   "dependencies": {
     "angular": "1.5.8",
+    "angular-touch": "1.6.5"
     "angular-aria": "1.5.8",
     "angular-bootstrap": "1.3.3",
     "angular-cache-buster": "0.4.3",

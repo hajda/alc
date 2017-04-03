@@ -1,0 +1,35 @@
+@media screen and (max-width: 480px) {
+    #alc-nav {
+        #alc-hamburger-menu {
+            visibility: visible;
+            position: fixed;
+            right: 0;
+        }
+        #alc-menu-container-flex-wrapper {
+
+            /* hide menu in mobile view */
+            &.alc-mobile-hide {
+                visibility: hidden;
+                width: 0;
+            }
+            &.alc-mobile-show {
+                // not really necessary
+            }
+
+            #alc-menu {
+                .alc-menu-item {
+                    float: none;
+                    position: relative;
+                    z-index: 9999; // TODO WHY IS IT NOT WORKING?
+
+                }
+            }
+
+        }
+        #alc-band-logo-container {
+            width: 0; height: 0;
+            visibility: hidden;
+        }
+    }
+} // end @media
+
