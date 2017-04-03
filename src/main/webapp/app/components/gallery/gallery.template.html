@@ -1,0 +1,13 @@
+<div ng-if="!selectedAlbum">
+    <div alc-album-cover
+         src="{{baseUrl + album.coverSrc}}"
+         attachment="fixed"
+         ng-repeat="album in alba"
+         ng-click="GalleryCtrl.selectAlbum(album)"
+     >{{album.title}}({{album.items.length}})</div>
+</div>
+
+<div ng-if="selectedAlbum">
+    <div alc-album></div>
+</div>
+

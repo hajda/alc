@@ -1,0 +1,14 @@
+.alc-album-header {
+    color: #DEDEDE;
+
+    &.alc-slide-down {
+        position: relative;
+        top: 84px;
+        padding-left: 20px;
+    }
+
+    .alc-album-title {
+        display: inline-block;
+        border: solid 1px red;
+    }
+}
