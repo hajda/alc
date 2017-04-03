@@ -1,21 +1,55 @@
 .alc-sticky-title {
-    //font-size: 110%;
-    //font-weight: bold;
-    //color: rgb(0, 66, 164);
-    z-index: 9989;
-    transition: top .4s ease-out;
+
+    /* Make the h1 StickyTitle width stretch with its content (it would be 100% by default) */
+    display: inline-block;
+    width: auto;
+
+    /* Make the h1 StickyTitle overlap everything */
+    position: relative;
+    z-index: 8010;
+
+    /* Make the h1 StickyTitle smoothly rotate */
+    transition: all .3s ease-out;
+
+    /* Make the h1 StickyTitle leave gap on left side for the band logo, but only in landscape */
+    padding-left: $alc-band-logo-width;
+    @media screen and (orientation: landscape) {
+        padding-left: 0px;
+    }
+
+    @media screen and (max-width: 480px) {
+        padding-left: 15px; // decrease the left gap in mobile
+
+        @media screen and (orientation: landscape) {
+            padding-left: 0px; // no need for padding when the title is vertical
+        }
+    }
+
+    &.alc-stick {
+        position: fixed;
+        top: 0px;
+
+        @media screen and (orientation: landscape) {
+            /* fix the width to 300 px */
+            display: inline-block;
+            width: 300px;
+
+            /* fix the height to 69px even if scroll offset is 0 */
+            height: $nav-height;
+
+            /* align to the top side of the navbar, leaving space for the hamburger */
+            top: 180px;
+            left: 45 - 150px;
+            transform: rotate(-90deg);
+            text-align: right;
+            transition-duration: .5s;
+        }
+    }
+    &.alc-swim-on {
+        top: -80px;
+        @media screen and (orientation: landscape) {
+            top: -300px;
+        }
+    }
 }
 
-.alc-stick {
-    position: fixed;
-    top: 0;
-    //color: whitesmoke;
-    //background-color: transparent;
-    z-index: 9990;
-    transition: top .4s linear;
-}
-
-.alc-stick.alc-swim-on {
-    top: -80px;
-    transition: top .4s linear;
-}
