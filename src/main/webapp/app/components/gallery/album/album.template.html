@@ -1,0 +1,45 @@
+<button id="alc-button-go-back-to-gallery" ng-click="GalleryCtrl.goBack($event)"></button>
+<h3 id="alc-selected-album-title">{{selectedAlbum.title}}</h3>
+<div class="alc-view-selected-album-item"
+     ng-class="{'alc-full-screen': fullScreen}"
+>
+    <div ng-if="false">{{selectedItem.name}}</div>
+
+    <div alc-image-frame
+         ng-repeat="item in selectedAlbum.items" ng-if="item == selectedItem"
+         src="{{baseUrl + item.src}}"
+         align-image="fit"
+         id="alc-selected-album-item"
+         class="alc-album-item alc-image-frame"
+         ng-class="{'alc-selected-album-item': item == selectedItem}"
+    >
+        <div id="alc-album-item-controls">
+            <div id="alc-album-item-next" ng-click="AlbumCtrl.prev($event)"><</div>
+            <div id="alc-album-item-multi-control"
+                 ng-click="swiping ? (swiping = false) : AlbumCtrl.toggleFullscreen($event)"
+                 ng-swipe-right="swiping = true; AlbumCtrl.prev($event);"
+                 ng-swipe-left="swiping = true; AlbumCtrl.next($event);"
+            ></div>
+            <div id="alc-album-item-prev" ng-click="AlbumCtrl.next($event)">></div>
+        </div>
+    </div>
+</div>
+
+<div class="alc-album-item-description">
+    <div class="alc-caption">{{item.description}}</div>
+    <div alc-credits alc-credit="{authors: [selectedItem.author], time: selectedItem.createdAt, location: selectedItem.location}"></div>
+</div>
+
+<ul class="alc-album-items-swipe">
+    <li ng-repeat="item in selectedAlbum.items"
+        ng-click="AlbumCtrl.select(item)"
+        class="alc-album-item-thumbnail-frame"
+    >
+        <div alc-image-frame
+             src="{{baseUrl + item.src}}"
+             align-image="fit"
+             class="alc-album-item-thumbnail"
+             ng-class="{'alc-selected-album-item-thumbnail': item == selectedItem}"
+        ></div>
+    </li>
+</ul>

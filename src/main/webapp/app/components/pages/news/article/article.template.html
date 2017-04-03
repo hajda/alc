@@ -1,7 +1,9 @@
 <h2>{{article.title}}</h2>
 
-<span>By <strong><a href="">{{article.author}}</a></strong></span>
+<!-- TODO refactor credits and creation dates to a directive -->
+<span>By <strong><a href="">{{article.author.firstName + ' ' + article.author.lastName}}</a></strong></span>
 <span>at <i>{{article.createdAt}}</i></span>
+
 <!-- TODO take the datetime apart with a filter and present it properly everywhere -->
 <br>
 <span>last modified at <i>{{article.lastModified}}</i></span>

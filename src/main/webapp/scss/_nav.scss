@@ -1,0 +1,73 @@
+@media screen and (min-width: 481px) {
+    #alc-hamburger-menu {
+        visibility: hidden;
+    }
+
+    .alc-menu-item {
+        float: right;
+    }
+}
+
+#alc-nav {
+    width: 100vw;
+    height: $nav-height;
+    &.alc-massive-header {
+        @media screen and (orientation: portrait) {
+            height: $nav-height + $massivity;
+        }
+    }
+
+    /**
+     * TODO | Try with flexbox.
+     * TODO | BUT beware, because the smoothScrolling to pages may not work that way!
+     */
+    position: fixed;
+    top: 0;
+    @media screen and (orientation: landscape) {
+        top: 0;
+        left: 0;
+        width: $nav-height;
+        height: 100%;
+        transition: height 1s ease-out;
+    }
+
+    background-color: rgba(#21002a, 1);
+
+    #alc-menu-container-flex-wrapper {
+        position: fixed; // this lets the navbar shrinking
+            @media screen and (max-width: 480px) {
+                top: 80px; // csak dev verzió
+            }
+        width: 100%;
+
+        @media screen and (max-width: 480px) {
+            background-color: #0A0A0A;
+            border: solid 1px #7a7a7a;
+            color: #7a7a7a;
+        }
+
+        #alc-menu {
+            position: relative;
+            top: 120px; // csak dev verzió
+            .alc-menu-item {
+                list-style-position: inside;
+                list-style-type: none;
+                padding-right: 15px;
+
+                &:hover {
+                    background-color: #343434;
+                }
+            }
+        }
+    }
+
+    #alc-band-logo-container {
+        width: $alc-band-logo-width;
+        height: 6em;
+        border: solid 1px rebeccapurple;
+    }
+
+    #alc-hamburger-menu {
+        top: 100px;
+    }
+}
