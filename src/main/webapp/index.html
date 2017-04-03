@@ -18,13 +18,13 @@
     <link rel="stylesheet" href="content/css/main.css">
     <!-- endbuild -->
 </head>
-<body ng-app="alcApp" ng-strict-di>
+<body ng-app="alcApp" id="alc-app" ng-strict-di>
     <!--[if lt IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <!--<page-ribbon></page-ribbon>-->
-    <!--<div ui-view="navbar" ng-cloak></div>-->
-    <!--<div class="container">-->
+    <div id="alc-nav" ui-view="alcnav" ng-cloak></div>
+    <div id="alc-container" class="container">
         <div class="" ui-view="content">
             <!-- Angular views -->
         </div>
@@ -32,7 +32,7 @@
         <!--<div class="footer" ng-cloak>-->
             <!--<p data-translate="footer">This is your footer</p>-->
         <!--</div>-->
-    <!--</div>-->
+    </div>
 
     <!-- Google Analytics: uncomment and change UA-XXXXX-X to be your site's ID.
     <script>
@@ -89,6 +89,7 @@
     <script src="app/services/auth/auth.service.js"></script>
     <script src="app/services/auth/activate.service.js"></script>
     <script src="app/services/auth/account.service.js"></script>
+    <script src="app/nav/nav.state.js"></script>
     <script src="app/layouts/navbar/navbar.controller.js"></script>
     <script src="app/layouts/navbar/active-menu.directive.js"></script>
     <script src="app/layouts/error/error.state.js"></script>
@@ -110,6 +111,7 @@
     <script src="app/components/testSections/testSections.filter.js"></script>
     <script src="app/components/testSections/testSections.directive.js"></script>
     <script src="app/components/testSections/testSections.controller.js"></script>
+    <script src="app/components/temporaryContentService/temporaryContentService.service.js"></script>
     <script src="app/components/stickyTitle/stickyTitle.directive.js"></script>
     <script src="app/components/stickyTitle/stickyTitle.controller.js"></script>
     <script src="app/components/smoothScroll/smoothScroll.service.js"></script>
@@ -119,6 +121,8 @@
     <script src="app/components/pages/pages.controller.js"></script>
     <script src="app/components/pages/page/page.directive.js"></script>
     <script src="app/components/pages/page/page.controller.js"></script>
+    <script src="app/components/pages/news/news.directive.js"></script>
+    <script src="app/components/pages/news/news.controller.js"></script>
     <script src="app/components/pages/news/article/article.directive.js"></script>
     <script src="app/components/pages/news/article/article.controller.js"></script>
     <script src="app/components/nav/nav.directive.js"></script>
@@ -129,6 +133,18 @@
     <script src="app/components/language/language.filter.js"></script>
     <script src="app/components/language/language.controller.js"></script>
     <script src="app/components/language/language.constants.js"></script>
+    <script src="app/components/gallery/gallery.service.js"></script>
+    <script src="app/components/gallery/gallery.filter.js"></script>
+    <script src="app/components/gallery/gallery.directive.js"></script>
+    <script src="app/components/gallery/gallery.controller.js"></script>
+    <script src="app/components/gallery/album/albumItem/albumItem.service.js"></script>
+    <script src="app/components/gallery/album/albumItem/albumItem.filter.js"></script>
+    <script src="app/components/gallery/album/albumItem/albumItem.directive.js"></script>
+    <script src="app/components/gallery/album/albumItem/albumItem.controller.js"></script>
+    <script src="app/components/gallery/album/album.service.js"></script>
+    <script src="app/components/gallery/album/album.filter.js"></script>
+    <script src="app/components/gallery/album/album.directive.js"></script>
+    <script src="app/components/gallery/album/album.controller.js"></script>
     <script src="app/components/form/show-validation.directive.js"></script>
     <script src="app/components/form/pagination.constants.js"></script>
     <script src="app/components/form/minbytes.directive.js"></script>

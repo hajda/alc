@@ -4,29 +4,32 @@
         <alc-home id="home-page-content"></alc-home>
     </section>
 
-    <!-- NEWS -->
-    <alc-page id="alc-{{content.pages.news.pageId}}-page" class="alc-page"
-              isolate-scope alc-page="content.pages.news"
+    <!-- News -->
+    <div alc-page id="alc-{{content.pages.news.pageId}}-page" class="alc-page"
+              isolate-scope alc-page-id="content.pages.news"
     >
         <page-title>
-            <h1 class="alc-sticky-title" ng-class="sectionTitleClasses[0]"
-                data-translate="content.pages.news.pageTitle"
-            ></h1>
+            <div class="alc-page-title-bar">
+                <h1 class="alc-sticky-title" ng-class="sectionTitleClasses[0]"
+                    data-translate="content.pages.news.pageTitle"
+                ></h1>
+            </div>
         </page-title>
         <page-body>
-            <alc-article ng-repeat="article in content.pages.news.pageContent.articles"
-            ></alc-article>
+            <alc-news></alc-news>
         </page-body>
-    </alc-page>
+    </div>
 
     <!-- Dates -->
-    <alc-page id="alc-{{content.pages.dates.pageId}}-page" class="alc-page"
-              isolate-scope alc-page="content.pages.dates"
+    <div alc-page id="alc-{{content.pages.dates.pageId}}-page" class="alc-page"
+              isolate-scope alc-page-id="content.pages.dates"
     >
         <page-title>
-            <h1 class="alc-sticky-title" ng-class="sectionTitleClasses[1]"
-                data-translate="content.pages.dates.pageTitle"
-            ></h1>
+            <div class="alc-page-title-bar">
+                <h1 class="alc-sticky-title" ng-class="sectionTitleClasses[1]"
+                    data-translate="content.pages.dates.pageTitle"
+                ></h1>
+            </div>
         </page-title>
         <page-body>
             <span ng-repeat="date in content.pages.dates.pageContent.tourDates">
@@ -34,5 +37,72 @@
                 <span ng-if="!$last"><br>--------------------------------<br></span>
             </span>
         </page-body>
-    </alc-page>
+    </div>
+
+    <!-- Gallery -->
+    <div alc-page id="alc-{{content.pages.galley.pageId}}-page" class="alc-page"
+         isolate-scope alc-page-id="content.pages.gallery"
+    >
+        <page-title>
+            <div class="alc-page-title-bar">
+                <h1 class="alc-sticky-title" ng-class="sectionTitleClasses[2]"
+                    data-translate="content.pages.gallery.pageTitle"
+                ></h1>
+            </div>
+        </page-title>
+        <page-body>
+            <div alc-gallery id="alc-gallery"></div>
+        </page-body>
+    </div>
+
+    <!-- Fourth Page -->
+    <div alc-page id="alc-{{content.pages.fourthPage.pageId}}-page" class="alc-page"
+         isolate-scope alc-page-id="content.pages.fourthPage"
+    >
+        <page-title>
+            <div class="alc-page-title-bar">
+                <h1 class="alc-sticky-title" ng-class="sectionTitleClasses[3]"
+                    data-translate="content.pages.fourthPage.pageTitle"
+                ></h1>
+            </div>
+        </page-title>
+        <page-body>
+            <!-- TODO replace content inside <page-body></page-body> -->
+            <div data-translate="content.pages.fourthPage.pageContent.text"></div>
+        </page-body>
+    </div>
+
+    <!-- Fifth Page -->
+    <div alc-page id="alc-{{content.pages.fifthPage.pageId}}-page" class="alc-page"
+         isolate-scope alc-page-id="content.pages.fifthPage"
+    >
+        <page-title>
+            <div class="alc-page-title-bar">
+                <h1 class="alc-sticky-title" ng-class="sectionTitleClasses[4]"
+                    data-translate="content.pages.fifthPage.pageTitle"
+                ></h1>
+            </div>
+        </page-title>
+        <page-body>
+            <!-- TODO replace content inside <page-body></page-body> -->
+            <div data-translate="content.pages.fifthPage.pageContent.text"></div>
+        </page-body>
+    </div>
+
+    <!-- Sixth Page -->
+    <div alc-page id="alc-{{content.pages.sixthPage.pageId}}-page" class="alc-page"
+         isolate-scope alc-page-id="content.pages.sixthPage"
+    >
+        <page-title>
+            <div class="alc-page-title-bar">
+                <h1 class="alc-sticky-title" ng-class="sectionTitleClasses[5]"
+                    data-translate="content.pages.sixthPage.pageTitle"
+                ></h1>
+            </div>
+        </page-title>
+        <page-body>
+            <!-- TODO replace content inside <page-body></page-body> -->
+            <div data-translate="content.pages.sixthPage.pageContent.text"></div>
+        </page-body>
+    </div>
 </div>

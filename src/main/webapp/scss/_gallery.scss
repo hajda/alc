@@ -1,0 +1,11 @@
+#alc-gallery {
+    display: inline-block;
+    width: 100%;
+    height: 80vh;
+    overflow-y: scroll;
+
+    .alc-back-to-album-list {
+        width: 1em;
+        height: 1em;
+    }
+}

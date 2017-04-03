@@ -36,7 +36,7 @@
                      * they will stick when they shouldn't. That's why it is done only on first scroll.
                      */
                     var stickyTitles = $element.find('.alc-sticky-title'); // Obtain the sticky titles
-                    console.info('Sticky Titles:', stickyTitles);
+                    // console.info('Sticky Titles:', stickyTitles);
                     initScrollTops(initialScrollTops, stickyTitles);
                     initScrollTops = function() {};
 
@@ -90,7 +90,7 @@
                         angular.element(stickyTitles[i]).prop('offsetTop')
                     );
                 }
-                console.info('scrollTops:', initialScrollTops);
+                // console.info('scrollTops:', initialScrollTops);
                 return initialScrollTops;
             }
         }

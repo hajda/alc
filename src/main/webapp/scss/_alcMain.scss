@@ -1,0 +1,22 @@
+html, body {
+    width: 100%;
+
+    background-color: black;
+}
+
+#alc-app /* the body element */ {
+    background-color: black;
+}
+
+#alc-container {
+    background-color: black;
+    @media screen and (max-width: 480px) {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.alc-inline {
+    display: inline-block;
+}
