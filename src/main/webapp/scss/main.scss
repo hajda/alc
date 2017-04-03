@@ -1,8 +1,24 @@
+/* ==========================================================================
+Variables
+========================================================================== */
+
+$pageTitleLeftPadding: 15px;
+
+/* ==========================================================================
+Import partial styles
+========================================================================== */
 @import "article";
 @import "stickyTitles";
+@import "alcMain";
+@import "page";
+@import "pages";
+@import "nav";
 
+/* ==========================================================================
+basic body setup
+========================================================================== */
 body {
-    background: #fafafa;
+    //background: #fafafa; // Couldn't override in partial, had to put in comment here
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
 }
