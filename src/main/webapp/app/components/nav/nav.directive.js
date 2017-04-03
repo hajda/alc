@@ -15,6 +15,7 @@ function navDirective(Content) {
         templateUrl: 'scripts/components/nav/nav.template.html',
         link: function link($scope) {
             $scope.menuItems = Content.getMenuItems();
+            // This directive is never invoked! The Alc nav is loaded via UI Router view "alcnav@". (required for the smootScroll navigation to work)
         }
     }
 }

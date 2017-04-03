@@ -18,7 +18,6 @@
                      * @type {Array}
                      */
                     var content = Content.getContent();
-                    console.log('Content:', content);
                     $scope.alba = content.pages.gallery.pageContent.albums;
 
                     $scope.baseUrl = '../../../../webContents/albums/';

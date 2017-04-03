@@ -1,6 +1,8 @@
 @media screen and (min-width: 481px) {
     #alc-hamburger-menu {
-        visibility: hidden;
+        position: fixed;
+        top: 100px;
+        right: 100px;
     }
 
     .alc-menu-item {
@@ -65,9 +67,5 @@
         width: $alc-band-logo-width;
         height: 6em;
         border: solid 1px rebeccapurple;
-    }
-
-    #alc-hamburger-menu {
-        top: 100px;
     }
 }

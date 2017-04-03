@@ -6,6 +6,57 @@ $alc-band-logo-width: 250px;
 $nav-height: 69px;
 $massivity: 35px;
 
+<<<<<<< HEAD
+=======
+  /* ******************* */
+ /*        brands       */
+/* ******************* */
+/* facebook */
+$facebook-flat: #3B5998;
+//$facebook-gradient-dark-shade: #blue;
+//$facebook-gradient-bright-shade: #blue;
+
+/* youtube */ // https://www.youtube.com/yt/brand/color.html
+$youtube-flat: #cd201f;
+$youtube-gradient-dark-shade: #b31217;
+$facebook-gradient-bright-shade: #e52d27;
+
+/* instagram */
+//$facebook-flat: #blue;
+//$facebook-gradient-dark-shade: #blue;
+//$facebook-gradient-bright-shade: #blue;
+
+/* twitter */
+//$facebook-flat: #blue;
+//$facebook-gradient-dark-shade: #blue;
+//$facebook-gradient-bright-shade: #blue;
+
+/* apple */
+//$facebook-flat: #blue;
+//$facebook-gradient-dark-shade: #blue;
+//$facebook-gradient-bright-shade: #blue;
+
+/* spotify */
+//$facebook-flat: #blue;
+//$facebook-gradient-dark-shade: #blue;
+//$facebook-gradient-bright-shade: #blue;
+
+/* soundcloud */
+//$facebook-flat: #blue;
+//$facebook-gradient-dark-shade: #blue;
+//$facebook-gradient-bright-shade: #blue;
+
+/* deezer */
+//$facebook-flat: #blue;
+//$facebook-gradient-dark-shade: #blue;
+//$facebook-gradient-bright-shade: #blue;
+
+/* band camp */
+//$facebook-flat: #blue;
+//$facebook-gradient-dark-shade: #blue;
+//$facebook-gradient-bright-shade: #blue;
+
+>>>>>>> [noartf] - Stuff - see list below
 /* ==========================================================================
 Import partial styles
 ========================================================================== */
@@ -24,6 +75,10 @@ Import partial styles
 @import "deviceMetrics";
 @import "shows";
 @import "show";
+<<<<<<< HEAD
+=======
+@import "videoThumbnail";
+>>>>>>> [noartf] - Stuff - see list below
 
 /* ==========================================================================
 Import fonts

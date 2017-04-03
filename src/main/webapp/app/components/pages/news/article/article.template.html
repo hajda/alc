@@ -12,12 +12,20 @@
 <h3>{{article.subTitle}}</h3>
 <span>{{article.preface}}</span>
 
+<img ng-if="article.illustrationSrc" ng-src="{{article.illustrationSrc}}" class="alc-article-illustration"></img>
+
 <section ng-repeat="section in article.sections" class="alc-article-section alc-{{section.sectionType || 'normal'}}">
     <h4>{{section.title}}</h4>
     <h5>{{section.sectionSubtitle}}</h5>
-    <span ng-repeat="paragraph in section.paragraphs" class="alc-article-paragraph alc-{{paragraph.paragraphType || 'normal'}}">
-        <h6>{{paragraph.paragraphEmphasize}}</h6>
-        <p>{{paragraph.paragraph}}</p>
+    <span ng-repeat="paragraph in section.paragraphs"
+          ng-switch on="paragraph.paragraphType"
+          class="alc-article-paragraph alc-{{paragraph.paragraphType || 'normal'}}"
+    >
+        <img ng-switch-when="image" ng-src="{{paragraph.paragraph}}" class="alc-article-illustration"></img>
+        <div ng-switch-default>
+            <h6>{{paragraph.paragraphEmphasize}}</h6>
+            <p>{{paragraph.paragraph}}</p>
+        </div>
     </span>
 </section>
 

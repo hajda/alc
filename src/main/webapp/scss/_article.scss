@@ -1,7 +1,8 @@
 .alc-article {
     font-family: 'Chivo', sans-serif;
-    padding: 2vw 0 2vw 0;
-    max-width: 800px;
+    padding: 2vw 10px 2vw 10px;
 
-    border: solid 1px rgba(red, .5);
+    .alc-article-illustration {
+        width: 100%;
+    }
 }
