@@ -60,9 +60,9 @@
         </alc-page-body>
     </div>
 
-    <!-- Fourth Page -->
-    <div alc-page id="alc-{{content.pages.fourthPage.pageId}}-page" class="alc-page"
-         isolate-scope alc-page-id="content.pages.fourthPage"
+    <!-- Videos Page -->
+    <div alc-page id="alc-{{content.pages.videos.pageId}}-page" class="alc-page"
+         isolate-scope alc-page-id="content.pages.videos"
     >
         <alc-page-title class="alc-page-title">
             <div class="alc-page-title-bar">
@@ -70,13 +70,18 @@
                     'alc-stick': sectionTitleClasses[3] == 1,
                     'alc-stick alc-swim-on': sectionTitleClasses[3] == 2
                 }"
-                    data-translate="content.pages.fourthPage.pageTitle"
-                ></h1>
+                >Videos</h1>
             </div>
         </alc-page-title>
         <alc-page-body class="alc-page-body">
-            <!-- TODO replace content inside <alc-page-body class="alc-page-body"></alc-page-body> -->
-            <div data-translate="content.pages.fourthPage.pageContent.text"></div>
+            <div alc-video-thumbnail ng-repeat="video in content.pages.videos.pageContent.videos" class="alc-video-thumbnail"
+                 title="{{video.title}}"
+                 subtitle="{{video.subtitle}}"
+                 thumbnail-src="{{video.thumbnailSrc}}"
+                 embed-src="{{video.embedSrc}}"
+                 youtube-link="{{video.youTubeLink}}"
+                 ng-class="{'dark-face': $index == 1}"
+            ></div>
         </alc-page-body>
     </div>
 

@@ -60,6 +60,7 @@
                             title: 'Website has been created!',
                             subTitle: 'Aron\'s Land Cargo Co. has a new website now!',
                             preface: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+                            illustrationSrc: 'https://scontent-vie1-1.xx.fbcdn.net/v/t31.0-8/15123407_1127435997333218_4138062644932620510_o.jpg?oh=da1e3d2219fe99f2cd8989fd7ba52647&oe=597E8A4F',
                             sections: [
                                 {
                                     sectionType: 'normal',
@@ -74,6 +75,10 @@
                                         {
                                             paragraphType: 'normal',
                                             paragraph: 'Proin ornare scelerisque porta. Praesent lobortis pulvinar elit, quis luctus erat interdum vitae. Aenean tortor dui, pulvinar vel tortor vitae, rhoncus finibus purus. Suspendisse at eros convallis, convallis ante sagittis, ullamcorper felis. Donec imperdiet auctor porttitor. Fusce mattis neque eget condimentum suscipit. Sed ultricies eros ac mattis finibus. Donec luctus tellus eros, vel consequat lectus tincidunt ut. Phasellus sit amet tempor turpis, id tempus nisi. Integer pellentesque ante eu orci sagittis, non bibendum ante fringilla. Suspendisse faucibus orci eu velit posuere placerat. Aliquam aliquet odio ut pellentesque tristique. Etiam eu dui justo.'
+                                        },
+                                        {
+                                            paragraphType: 'image',
+                                            paragraph: 'https://scontent-vie1-1.xx.fbcdn.net/v/t31.0-8/15123407_1127435997333218_4138062644932620510_o.jpg?oh=da1e3d2219fe99f2cd8989fd7ba52647&oe=597E8A4F'
                                         },
                                         {
                                             paragraphType: 'normal',
@@ -101,6 +106,7 @@
                                 }
                             ]
                         }
+                        // second article goes here
                     ]
                 }
             },
@@ -150,9 +156,9 @@
                                 venueEvent: null
                             },
                             time: {
-                                date: '2017.5.24',
+                                date: '2017.05.24',
                                 time: '21:00',
-                                dateTime: '2017.5.24 21:00'
+                                dateTime: '2017.05.24 21:00'
                             },
                             social: {
                                 facebookEventUrl: '',
@@ -524,11 +530,40 @@
                     ]
                 }
             },
-            fourthPage: {
-                pageId: 'fourthPage',
-                pageName: 'fourthPage',
-                pageTitle: 'Fourth Page',
+            videos: {
+                pageId: 'videos',
+                pageName: 'videos',
+                pageTitle: 'Videos',
                 pageContent: {
+                    videos: [
+                        {
+                            id: 1,
+                            name: 'gold-rush',
+                            title: 'Gold Rush',
+                            subtitle: 'Official Lyric Video 2017 - from the Klinik compilation split album "Four sad songs"',
+                            thumbnailSrc: 'https://scontent-vie1-1.xx.fbcdn.net/v/t31.0-8/17966566_1277046069038876_1632907241076890733_o.jpg?oh=eec4547de0420785f10ee463c059f996&oe=597CFEF0',
+                            embedSrc: 'https://www.youtube.com/embed/cls4OlPz1WI',
+                            youTubeLink: 'https://youtu.be/cls4OlPz1WI'
+                        },
+                        {
+                            id: 2,
+                            name: 'fly',
+                            title: 'Fly',
+                            subtitle: 'Official Lyric Video 2017 - From the Aron\'s Land Cargo Co. album "Always Closer Never There"',
+                            thumbnailSrc: 'https://scontent-vie1-1.xx.fbcdn.net/v/t31.0-8/16463037_1207293829347434_8458081777417761522_o.jpg?oh=13ddd21545653079b46e1a8e24b21628&oe=59ABE560',
+                            embedSrc: 'https://www.youtube.com/embed/r2mQBpkD1Fc',
+                            youTubeLink: 'https://youtu.be/r2mQBpkD1Fc'
+                        },
+                        {
+                            id: 3,
+                            name: 'road-to-canaan',
+                            title: 'Road to Canaan',
+                            subtitle: 'Official Video 2016 - From the Aron\'s Land Cargo Co. album "Always Closer Never There"',
+                            thumbnailSrc: 'https://scontent-vie1-1.xx.fbcdn.net/v/t31.0-8/15235524_1137881609621990_5272585528409405651_o.jpg?oh=4bf103e42e2fc5db37833e73a52f84c8&oe=59788E1B',
+                            embedSrc: 'https://www.youtube.com/embed/O7WADeQaVtw',
+                            youTubeLink: 'https://youtu.be/O7WADeQaVtw'
+                        }
+                    ]
                 }
             },
             fifthPage: {

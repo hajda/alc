@@ -6,7 +6,7 @@
 
     /* Make the h1 StickyTitle overlap everything */
     position: relative;
-    z-index: 8010;
+    z-index: 1000;
 
     /* Make the h1 StickyTitle smoothly rotate */
     transition: all .3s ease-out;
@@ -27,6 +27,7 @@
 
     &.alc-stick {
         position: fixed;
+        z-index: 1000;
         top: 0px;
 
         @media screen and (orientation: landscape) {
@@ -35,7 +36,9 @@
             width: 300px;
 
             /* fix the height to 69px even if scroll offset is 0 */
-            height: $nav-height;
+            height: $nav-height - 30px;
+            margin-top: 30px;
+            margin-bottom: 0;
 
             /* align to the top side of the navbar, leaving space for the hamburger */
             top: 180px;

@@ -6,6 +6,87 @@ $alc-band-logo-width: 250px;
 $nav-height: 69px;
 $massivity: 35px;
 
+/**
+ * Palette
+ */
+$alc-dark-accent: #370047;
+
+$alc-nav-bg-color: #21002a;
+$alc-album-cover-stripe-color: #391e47;
+/**
+ * NML variables
+ */
+$big-header-size: 100px;
+$small-header-size: 40px;
+$scroll-transition: 0.2s ease-out all;
+$background-dark: #333;
+
+$nml-menu-item-font-size-desktop: 12pt;
+$nml-small-header-size-desktop: 40px;
+$nml-hamburger-menu-medium-size: 64px;
+$nml-hamburger-menu-medium-fixed-position: 8px;
+$nml-hamburger-menu-medium-font-size: $nml-hamburger-menu-medium-size / 1.333333333333;
+
+$nml-band-logo-width-720-portrait: 125px;
+$nml-band-logo-width-desktop: 180px;
+$nml-header-size-720-portrait: 100px;
+$nml-header-size-desktop: 115px;
+
+$foreground-color: #555;
+$nml-gap-720-portrait: 8px;
+
+$nml-menu-item-font-size-720-portrait: 24px;
+
+$nml-menu-font-color: #DBCBA1;
+
+  /* ******************* */
+ /*        brands       */
+/* ******************* */
+/* facebook */
+$facebook-flat: #3B5998;
+//$facebook-gradient-dark-shade: #blue;
+//$facebook-gradient-bright-shade: #blue;
+
+/* youtube */ // https://www.youtube.com/yt/brand/color.html
+$youtube-flat: #cd201f;
+$youtube-gradient-dark-shade: #b31217;
+$facebook-gradient-bright-shade: #e52d27;
+
+/* instagram */
+//$facebook-flat: #blue;
+//$facebook-gradient-dark-shade: #blue;
+//$facebook-gradient-bright-shade: #blue;
+
+/* twitter */
+//$facebook-flat: #blue;
+//$facebook-gradient-dark-shade: #blue;
+//$facebook-gradient-bright-shade: #blue;
+
+/* apple */
+//$facebook-flat: #blue;
+//$facebook-gradient-dark-shade: #blue;
+//$facebook-gradient-bright-shade: #blue;
+
+/* spotify */
+//$facebook-flat: #blue;
+//$facebook-gradient-dark-shade: #blue;
+//$facebook-gradient-bright-shade: #blue;
+
+/* soundcloud */
+//$facebook-flat: #blue;
+//$facebook-gradient-dark-shade: #blue;
+//$facebook-gradient-bright-shade: #blue;
+
+/* deezer */
+//$facebook-flat: #blue;
+//$facebook-gradient-dark-shade: #blue;
+//$facebook-gradient-bright-shade: #blue;
+
+/* band camp */
+//$facebook-flat: #blue;
+//$facebook-gradient-dark-shade: #blue;
+//$facebook-gradient-bright-shade: #blue;
+
 /* ==========================================================================
 Import partial styles
 ========================================================================== */
@@ -24,6 +105,7 @@ Import partial styles
 @import "deviceMetrics";
 @import "shows";
 @import "show";
+@import "videoThumbnail";
 
 /* ==========================================================================
 Import fonts
@@ -66,7 +148,7 @@ Development Ribbon
     webkit-transform: rotate(-45deg);
     white-space: nowrap;
     width: 15em;
-    z-index: 9999;
+    z-index: 0;
     pointer-events: none;
     a {
         border: 1px solid #faa;
@@ -421,14 +503,3 @@ Social button
 }
 
 /* jhipster-needle-scss-add-main JHipster will add new css style */
-
-/* TODO refactor the followings into separate partial */
-.alc-article-paragraph.alc-bigcite {
-    font-size: 200%;
-    font-style: italic;
-    font-weight: bold;
-}
-
-.alc-page-marker {
-    background-color: #2e6da4;
-}

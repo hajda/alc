@@ -42,8 +42,10 @@
 
         function toggleMenu() {
             $scope.menu.mobileHide = !$scope.menu.mobileHide;
-        };
+        }
 
+
+        /* //////////////////////////////////////////// NML blogic ////////////////////////////////////////////// */
     }
 })();
 

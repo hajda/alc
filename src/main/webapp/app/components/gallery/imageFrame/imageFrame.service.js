@@ -4,9 +4,12 @@
     angular.module('alcApp')
         .factory('AlcImageFrame', imageFrameService);
 
-    imageFrameService.$inject = [];
+    imageFrameService.$inject = [ '$window'];
 
-    function imageFrameService() {
+    function imageFrameService($window) {
+
+        var myWindow = angular.element($window);
+
         return {
             updateFrame: updateFrame
         };
@@ -31,6 +34,8 @@
 
                 applyStyle();
             })();
+
+            /* Implementation details */
 
             function applyStyle() {
                 $element.css({

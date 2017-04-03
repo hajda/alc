@@ -79,8 +79,8 @@
                  * - if it is superseded by the following title, it should slide up a few pxs above the top (added class alc-swim-on)
                  *
                  *  TODO | It would be much nicer if the dom elements were given the classes by DOM manipulation,
-                 *  TODO | because ow one have to remember to add ngClass directive to the title elements and reference
-                 *  TODO | reference the element on the appropriate position in the {@link sectionTitleClasses} array.
+                 *  TODO | because now one have to remember to add ngClass directive to the title elements and reference
+                 *  TODO | the element on the appropriate position in the {@link sectionTitleClasses} array.
                  */
                 for (var j = 0; j < stickyTitles.length; j++) {
                     if (myWindow.scrollTop() >= initialScrollTops[j] - stickingOffset - 20) {

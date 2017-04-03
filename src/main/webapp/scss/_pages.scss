@@ -1,8 +1,10 @@
 .alc-page-title-bar {
     display: inline-block;
-    background-color: #370047;
 
     width: 100%;
+    height: $nav-height;
+
+    background-color: $alc-dark-accent;
 }
 
 
@@ -10,10 +12,11 @@
     color: #dec2ff;
 }
 
-/**
- * Fix - prevent the change of this element's height on the page when a sticky title sticks
- */
 alc-page-title.alc-page-title {
     display: block;
     height: $nav-height;
+}
+
+.alc-page-marker {
+    // TODO define style
 }
