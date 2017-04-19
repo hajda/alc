@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a38c8f37_ff5e5315",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1010425
+      },
+      "writtenOn": "2017-04-19T19:12:22Z",
+      "side": 1,
+      "message": "\\n -",
+      "range": {
+        "startLine": 12,
+        "startChar": 84,
+        "endLine": 12,
+        "endChar": 85
+      },
+      "revId": "aac186fabfaa34cabbd22afd06b6acb9b86ed059",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f3f2bf0a_d06306d9",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1010425
+      },
+      "writtenOn": "2017-04-19T19:12:22Z",
+      "side": 1,
+      "message": "-",
+      "range": {
+        "startLine": 13,
+        "startChar": 1,
+        "endLine": 13,
+        "endChar": 2
+      },
+      "revId": "aac186fabfaa34cabbd22afd06b6acb9b86ed059",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "51d97c2f_d63648cf",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1010425
+      },
+      "writtenOn": "2017-04-19T19:12:22Z",
+      "side": 1,
+      "message": "typo not",
+      "range": {
+        "startLine": 14,
+        "startChar": 62,
+        "endLine": 14,
+        "endChar": 65
+      },
+      "revId": "aac186fabfaa34cabbd22afd06b6acb9b86ed059",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "36dcb08b_b4ffe55e",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1010425
+      },
+      "writtenOn": "2017-04-19T19:12:22Z",
+      "side": 1,
+      "message": "ardicle\u003es\u003c",
+      "range": {
+        "startLine": 15,
+        "startChar": 40,
+        "endLine": 15,
+        "endChar": 47
+      },
+      "revId": "aac186fabfaa34cabbd22afd06b6acb9b86ed059",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5dc52b3d_395c51e0",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1010425
+      },
+      "writtenOn": "2017-04-19T19:12:22Z",
+      "side": 1,
+      "message": "over",
+      "range": {
+        "startLine": 15,
+        "startChar": 39,
+        "endLine": 15,
+        "endChar": 40
+      },
+      "revId": "aac186fabfaa34cabbd22afd06b6acb9b86ed059",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
