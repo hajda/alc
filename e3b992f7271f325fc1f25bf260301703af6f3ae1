@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "68201f5a_4df65101",
+        "filename": "src/main/webapp/scss/_stickyTitles.scss",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1010425
+      },
+      "writtenOn": "2017-04-19T19:12:22Z",
+      "side": 1,
+      "message": "nem kell",
+      "range": {
+        "startLine": 9,
+        "startChar": 8,
+        "endLine": 9,
+        "endChar": 25
+      },
+      "revId": "e3b992f7271f325fc1f25bf260301703af6f3ae1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
