@@ -9,9 +9,11 @@
         .controller('AlcPageController', pageController)
     ;
 
-    pageController.$inject = [];
+    pageController.$inject = ['$scope'];
 
-    function pageController() {
+    function pageController($scope) {
+        var pageCtrl = this;
 
+        // pageCtrl.myFunction = myFunction;
     }
 })();

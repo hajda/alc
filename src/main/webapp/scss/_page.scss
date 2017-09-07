@@ -1,0 +1,22 @@
+.alc-page-title-bar {
+    display: inline-block;
+
+    width: 100%;
+    height: $alc-nav-height;
+
+    background-color: $alc-dark-accent;
+}
+
+
+.alc-page-title {
+    color: #ebd3ff;
+}
+
+alc-page-title.alc-page-title {
+    display: block;
+    height: $alc-nav-height;
+}
+
+.alc-page-marker {
+    // TODO define style
+}

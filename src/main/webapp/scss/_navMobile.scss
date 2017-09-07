@@ -1,45 +1,138 @@
-//@media screen and (max-width: 480px) { // TODO enable and set limits when desktop style is created
-    #alc-nav {
-        #alc-hamburger-menu {
-        //    visibility: visible;
-        //    position: fixed;
-        //    right: 0;
-        }
+////@media screen and (max-width: 480px) { // TODO enable and set limits when desktop style is created
+//    #alc-nav {
+//        #alc-hamburger-menu {
+//        //    visibility: visible;
+//        //    position: fixed;
+//        //    right: 0;
+//        }
+//
+//        #alc-menu-container-flex-wrapper {
+//
+//            /* hide menu in mobile view */
+//            &.alc-mobile-hide {
+//                visibility: hidden;
+//                width: 0;
+//                transition: none;
+//            }
+//            &.alc-mobile-show {
+//                transition: ease-out .2s .5s;
+//            }
+//
+//            #alc-menu {
+//                position: fixed;
+//                right: 0;
+//                z-index: 9000;
+//
+//
+//
+//                .alc-menu-item {
+//                    float: none;
+//                    position: relative;
+//                    z-index: 9000;
+//                }
+//            }
+//
+//        }
+//        #alc-band-logo-container {
+//            width: 0; height: 0;
+//            visibility: hidden;
+//        }
+//    }
+////} // end @media // end TODO enable and set limits when desktop style is created
 
-        #alc-menu-container-flex-wrapper {
+#alc-nav {
+    //position: fixed;
+    //top: 0;
 
-            /* hide menu in mobile view */
-            &.alc-mobile-hide {
-                visibility: hidden;
-                width: 0;
-                transition: none;
+    //width: 100vw;
+    height: $alc-nav-height; &.alc-massive-header { @media screen and (orientation: portrait) {
+        height: 0; // $alc-nav-height + $massivity;
+    }}
+    //
+    //@media screen and (orientation: landscape) {
+    //    top: 0;
+    //    left: 0;
+    //    width: $alc-nav-height;
+    //    height: 100%;
+    //    transition: height 1s ease-out;
+    //}
+
+    //background-color: rgba($alc-nav-bg-color, 1);
+}
+#alc-nav-background {
+    position: fixed;
+    top: 0;
+
+    width: 100vw;
+    height: $alc-nav-height; &.alc-massive-header { @media screen and (orientation: portrait) {
+        height: $alc-nav-height + $massivity;
+    }}
+
+    @media screen and (orientation: landscape) {
+        top: 0;
+        left: 0;
+        width: $alc-nav-height;
+        height: 100%;
+        transition: height 1s ease-out;
+    }
+
+    background-color: rgba($alc-nav-bg-color, 1);
+}
+
+#alc-menu-container-flex-wrapper {
+
+    /* hide menu in mobile view */
+    &.alc-mobile-hide {
+        visibility: hidden;
+        width: 0;
+        transition: none;
+    }
+    &.alc-mobile-show {
+        transition: ease-out .2s .5s;
+    }
+
+    #alc-menu {
+        position: fixed;
+        z-index: 9000;
+        top: 0;
+        right: 0;
+
+        .alc-menu-item {
+            list-style-position: inside;
+            list-style-type: none;
+            padding-right: 15px;
+
+            transition: ease-out .2s;
+            box-sizing: border-box;
+            padding-left: $nml-gap-720-portrait;
+            padding-right: $nml-gap-720-portrait;
+            //width: 68px; /////////////////////// makes a fixed width horizontal list
+            width: 100%;
+            transition: width .5s linear;
+
+            //background-color: #333;
+            font-size: 250%;
+            font-weight: bolder;
+
+            color: #52385d;
+
+            &:hover {
+                color: #391e47;
+                transition: ease-out .2s;
             }
-            &.alc-mobile-show {
-                transition: ease-out .2s .5s;
+            &:active {
+                //background-color: #222;
+                transition: ease-out .2s;
             }
-
-            #alc-menu {
-                position: fixed;
-                right: 0;
-                z-index: 9990;
-
-
-
-                .alc-menu-item {
-                    float: none;
-                    position: relative;
-                    z-index: 9990;
-
-                }
+            &:focus {
+                //color: #467e9f;
+                outline: #FFF solid 1px;
             }
-
-        }
-        #alc-band-logo-container {
-            width: 0; height: 0;
-            visibility: hidden;
         }
     }
-//} // end @media // end TODO enable and set limits when desktop style is created
+}
+
+
 
 /** /////////////////////////////////////////////// NML MENU ANIMATION ///////////////////////////////////////////// **/
 
@@ -48,7 +141,7 @@
     position: fixed;
     top: $nml-hamburger-menu-medium-fixed-position;
     right: $nml-hamburger-menu-medium-fixed-position * 3;
-    z-index: 9800;
+    z-index: 8000;
 
     box-sizing: border-box;
     width: $nml-hamburger-menu-medium-size;
