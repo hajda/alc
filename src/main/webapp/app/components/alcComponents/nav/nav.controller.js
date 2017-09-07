@@ -35,7 +35,7 @@
             $timeout(goToAlcPage, 1);
 
             function goToAlcPage() {
-                $scope.scrollTo(pageName);
+                $scope.scrollTo(pageName); // smoothScroll -- invoked with body element -- puts this function on the scope
                 $scope.menu.mobileHide = true;
             }
         };
@@ -43,9 +43,6 @@
         function toggleMenu() {
             $scope.menu.mobileHide = !$scope.menu.mobileHide;
         }
-
-
-        /* //////////////////////////////////////////// NML blogic ////////////////////////////////////////////// */
     }
 })();
 

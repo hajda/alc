@@ -2,7 +2,7 @@
 <html class="no-js">
 <head>
     <meta charset="utf-8">
-    <meta name="theme-color" content="#21002a" />
+    <meta name="theme-color" content="#f9d246" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>alc</title>
     <meta name="description" content="">
@@ -28,6 +28,7 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <!--<page-ribbon></page-ribbon>-->
+    <div id="alc-nav-background" ng-class="{'alc-massive-header' : $root.scrollDelta == 'small-delta'}"></div>
     <div id="alc-nav" ui-view="alcnav" ng-cloak ng-class="{'alc-massive-header' : $root.scrollDelta == 'small-delta'}"></div>
     <div id="alc-container" class="container" ng-class="{'alc-massive-header' : $root.scrollDelta == 'small-delta'}">
         <div class="" ui-view="content">

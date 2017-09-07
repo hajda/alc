@@ -1,95 +1,88 @@
-#alc-nav {
-    width: 100vw;
-    height: $nav-height;
-    &.alc-massive-header {
-        @media screen and (orientation: portrait) {
-            height: $nav-height + $massivity;
-        }
-    }
-
-    /**
-     * TODO | Try with flexbox.
-     * TODO | BUT beware, because the smoothScrolling to pages may not work that way!
-     */
-    position: fixed;
-    top: 0;
-    @media screen and (orientation: landscape) {
-        top: 0;
-        left: 0;
-        width: $nav-height;
-        height: 100%;
-        transition: height 1s ease-out;
-    }
-
-    background-color: rgba($alc-nav-bg-color, 1);
-
-    #alc-menu-container-flex-wrapper {
-        position: fixed; // this lets the navbar shrinking
-            @media screen and (max-width: 480px) {
-                // TODO define style
-            }
-        width: 100%;
-
-        //@media screen and (max-width: 480px) { // TODO enable and set limits when desktop style is created
-        color: #7a7a7a;
-        z-index: 9900;
-        //} // end TODO enable and set limits when desktop style is created
-
-        #alc-menu {
-            //position: relative;
-            //top: 0; // TODO define style
-
-            //position: fixed;
-            //&.active-header {
-            //    //margin-top: $nml-header-size-desktop - $nml-small-header-size-desktop;
-            //    top: 150px;
-            //}
-            //top: 60px;
-            //left: 0;
-            //width: 900px;
-
-            .alc-menu-item {
-                list-style-position: inside;
-                list-style-type: none;
-                padding-right: 15px;
-
-                transition: ease-out .2s;
-                float: right;
-                box-sizing: border-box;
-                padding-left: $nml-gap-720-portrait;
-                padding-right: $nml-gap-720-portrait;
-                //width: 68px; /////////////////////// makes a fixed width horizontal list
-                width: 100%;
-                transition: width .5s linear;
-
-                //background-color: #333;
-                font-size: 250%;
-                font-weight: bolder;
-
-                color: #52385d;
-
-                &:hover {
-                    color: #391e47;
-                    transition: ease-out .2s;
-                }
-                &:active {
-                    //background-color: #222;
-                    transition: ease-out .2s;
-                }
-                &:focus {
-                    //color: #467e9f;
-                    outline: #FFF solid 1px;
-                }
-            }
-        }
-    }
-
-    #alc-band-logo-container {
-        width: $alc-band-logo-width;
-        height: 6em;
-        border: solid 1px rebeccapurple;
-    }
-}
-
-
-
+//#alc-nav {
+//    width: 100vw;
+//    height: $nav-height;
+//    &.alc-massive-header {
+//        @media screen and (orientation: portrait) {
+//            height: $nav-height + $massivity;
+//        }
+//    }
+//
+//    position: fixed;
+//    top: 0;
+//    @media screen and (orientation: landscape) {
+//        top: 0;
+//        left: 0;
+//        width: $nav-height;
+//        height: 100%;
+//        transition: height 1s ease-out;
+//    }
+//
+//    background-color: rgba($alc-nav-bg-color, 1);
+//
+//    #alc-menu-container-flex-wrapper {
+//        position: fixed; // this lets the navbar shrinking
+//        z-index: 9000;
+//
+//        width: 100%;
+//
+//        //@media screen and (max-width: 480px) { // TODO enable and set limits when desktop style is created
+//        //} // end TODO enable and set limits when desktop style is created
+//
+//        #alc-menu {
+//            //position: relative;
+//            //top: 0; // TODO define style
+//
+//            //position: fixed;
+//            //&.active-header {
+//            //    //margin-top: $nml-header-size-desktop - $nml-small-header-size-desktop;
+//            //    top: 150px;
+//            //}
+//            //top: 60px;
+//            //left: 0;
+//            //width: 900px;
+//
+//            .alc-menu-item {
+//                list-style-position: inside;
+//                list-style-type: none;
+//                padding-right: 15px;
+//
+//                transition: ease-out .2s;
+//                float: right;
+//                box-sizing: border-box;
+//                padding-left: $nml-gap-720-portrait;
+//                padding-right: $nml-gap-720-portrait;
+//                //width: 68px; /////////////////////// makes a fixed width horizontal list
+//                width: 100%;
+//                transition: width .5s linear;
+//
+//                //background-color: #333;
+//                font-size: 250%;
+//                font-weight: bolder;
+//
+//                color: #52385d;
+//
+//                &:hover {
+//                    color: #391e47;
+//                    transition: ease-out .2s;
+//                }
+//                &:active {
+//                    //background-color: #222;
+//                    transition: ease-out .2s;
+//                }
+//                &:focus {
+//                    //color: #467e9f;
+//                    outline: #FFF solid 1px;
+//                }
+//            }
+//        }
+//    }
+//
+//    #alc-band-logo-container {
+//        width: $alc-band-logo-width;
+//        height: 6em;
+//        border: solid 1px rebeccapurple;
+//    }
+//}
+//
+//
+//

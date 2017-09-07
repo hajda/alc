@@ -13,10 +13,6 @@
             controllerAs: 'ShowCtrl',
             link: function postLink($scope, $element, attribs, ctrl) {
                 console.info('delay!');
-                $timeout(function(){
-                    console.info('scroll!!!');
-                    SmoothScroll.scrollTo('alc-shows-page-marker', $rootScope.scrollDelta == 'small-delta' ? 35 : 0);
-                }, 1);
             }
         };
     }

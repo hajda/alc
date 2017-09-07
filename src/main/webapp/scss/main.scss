@@ -3,16 +3,30 @@ Variables
 ========================================================================== */
 
 $alc-band-logo-width: 250px;
-$nav-height: 69px;
+$alc-nav-height: 69px;
 $massivity: 35px;
 
 /**
  * Palette
  */
-$alc-dark-accent: #370047;
 
-$alc-nav-bg-color: #21002a;
-$alc-album-cover-stripe-color: #391e47;
+//$alc-dark-accent: #370047;
+//
+//$alc-nav-bg-color: #21002a;
+//$alc-album-cover-stripe-color: #391e47;
+
+$alc-dark-accent: #4e4e4e;
+$alc-nav-bg-color: #2f2f2f;
+$nml-menu-font-color: #c2c2c2;
+
+$alc-dark-contrast: #0b0805;
+$alc-bright-contrast: #ffffff;
+$alc-accent: #f9d246;
+$alc-accent-variant: #ebc532;
+$alc-font-color: #ab9f82;
+
+$alc-album-cover-stripe-color: $alc-accent-variant;
+
 /**
  * NML variables
  */
@@ -36,8 +50,6 @@ $foreground-color: #555;
 $nml-gap-720-portrait: 8px;
 
 $nml-menu-item-font-size-720-portrait: 24px;
-
-$nml-menu-font-color: #DBCBA1;
 
   /* ******************* */
  /*        brands       */
@@ -118,7 +130,7 @@ basic body setup
 body {
     //background: #fafafa; // Couldn't override in partial, had to put in comment here
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
+    color: $alc-font-color;
 }
 
 /* ==========================================================================

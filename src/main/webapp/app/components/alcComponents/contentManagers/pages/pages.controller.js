@@ -12,6 +12,6 @@
     pagesController.$inject = [];
 
     function pagesController() {
-
+        var pagesCtrl = this;
     }
 })();

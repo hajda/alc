@@ -23,14 +23,7 @@
         /* public functions */
 
         function scrollTo(eID) {
-            // if (SmoothScroll.scrollDelta == 'small-delta') { // if the header is big
-            //     //offset = 110 - window.pageYOffset; // correct the scroll target, because tha header will be smaller by 60px
-            // }
-
-            // /** set the location.hash to the id of the element you wish to scroll to. */
-            // $location.hash('bottom');
-
-            SmoothScroll.scrollTo(eID, $rootScope.scrollDelta == 'small-delta' ? 35 : 0);
+            SmoothScroll.scrollTo(eID, scrollOffsetBasedOnNavHeightAndOrientation());
         }
 
         /* implementation details */
@@ -44,6 +37,45 @@
                 SmoothScroll.scrollDelta = 'small-delta';
             }
             $scope.$apply();
+        }
+
+        /**
+         * The distance to the scroll target can vary, and this function calculates the variation.
+         *
+         * There are 2 basic cases:
+         * 1. when the orientation is portrait
+         * 2. when the orientation is landscape
+         *
+         * 1.
+         * In landscape, the navbar and the page tiles go to the left of the viewport,
+         * so when scrolling to a page, there is an empty Page Title Bar on the top of the page.
+         * In order to fix it, we want to scroll further down by 1 Page Title Bar, which is 69pxs tall (at the time of
+         * the writing of this doc).
+         *
+         * 2.
+         * In portrait, the navbar grows bigger whewn the page is scrolled all the way to the top. The navbar grows by
+         * 35 pxs (at the time of the writing of this doc).
+         *
+         * The amount the navbar grows in portrait, and the height of the Page Title Bar is commonly called
+         * "scrollOffset" in this function.
+         *
+         * @returns {number} the Scroll Offset
+         */
+        function scrollOffsetBasedOnNavHeightAndOrientation() {
+            var scrollOffset = 0;
+
+            if (viewportOrientation() == 'landscape') {
+                scrollOffset = -64;
+            } else if ($rootScope.scrollDelta == 'small-delta') {
+                scrollOffset = 35;
+            }
+
+            return scrollOffset;
+        }
+
+        function viewportOrientation() {
+            console.log('w:', $window.innerHeight, 'h:', $window.innerWidth);
+            return $window.innerHeight > $window.innerWidth ? 'portrait' : 'landscape';
         }
     }
 })();

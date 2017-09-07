@@ -15,14 +15,12 @@
         return {
             restrict: 'AE',
             scope: { // isolate$scope
-                page: '=alcPageId'
+                page: '=alcPageContent',
+                pageIndex: '=alcPageIndex',
+                sectionTitleClasses: '=alcSectionTitleClasses'
             },
             controller: 'AlcPageController',
             controllerAs: 'PageCtrl',
-            transclude: {
-                'alcpagetitle': 'alcPageTitle',
-                'alcpagebody': 'alcPageBody'
-            },
             templateUrl: 'app/components/alcComponents/contentManagers/pages/page/page.template.html',
             link: function postLink($scope, attribs, $element, ctrl) {
 
