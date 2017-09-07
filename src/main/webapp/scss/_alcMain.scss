@@ -4,25 +4,25 @@ html, body {
 
     min-width: 0px;
 
-    background-color: black;
+    background-color: #0A0A0A;
 }
 
 .alc-single-page {
-    margin-top: $nav-height;
+    margin-top: $alc-nav-height;
 
     &.alc-massive-header {
         @media screen and (orientation: portrait) {
-            margin-top: $nav-height;
+            margin-top: $alc-nav-height;
         }
     }
 }
 
 #alc-app /* the body element */ {
-    background-color: black;
+    background-color: #0A0A0A;
 }
 
 #alc-container {
-    background-color: black;
+    background-color: #0A0A0A;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -33,7 +33,7 @@ html, body {
         }
     }
     @media screen and (orientation: landscape) {
-        padding-left: $nav-height;
+        padding-left: $alc-nav-height;
     }
 
 }

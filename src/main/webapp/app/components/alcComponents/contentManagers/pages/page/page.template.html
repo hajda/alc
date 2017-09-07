@@ -1,7 +1,41 @@
-<div id="alc-{{page.pageName}}-page-marker" class="alc-page-marker"></div>
-<div id="alc-{{page.pageName}}-page-section" class="alc-page-section">
-    <div id="alc-{{page.pageName}}-page-title" class="alc-page-title"><div ng-transclude="alcpagetitle">No Page Title is Transcluded...</div></div>
-    <div id="alc-{{page.pageName}}-page-body" class="alc-page-body">
-        <div ng-transclude="alcpagebody">No Content is Transcluded...</div>
+<div id="alc-{{::page.pageId}}-page-marker" class="alc-page-marker"><!-- this is the bookmark for navigation --></div>
+<div id="alc-{{::page.pageId}}-page-section" class="alc-page-section">
+    <div id="alc-{{::page.pageId}}-page-title" class="alc-page-title">
+        <div class="alc-page-title">
+            <div class="alc-page-title-bar">
+                <h1 class="alc-sticky-title" ng-class="{
+                        'alc-stick': sectionTitleClasses[pageIndex] == 1,
+                        'alc-stick alc-swim-on': sectionTitleClasses[pageIndex] == 2
+                    }"
+                >{{::page.pageTitle}}</h1>
+            </div>
+        </div>
+    </div>
+    <div id="alc-{{::page.pageId}}-page-body" class="alc-page-body">
+        <div ng-switch on="page.pageId" class="alc-page-switcher">
+            <alc-articles ng-switch-when="news" id="alc-{{::page.pageId}}" ></alc-articles>
+
+            <alc-shows ng-switch-when="shows" id="alc-{{::page.pageId}}" ></alc-shows>
+
+            <div alc-gallery ng-switch-when="gallery" id="alc-{{::page.pageId}}"></div>
+
+            <div ng-switch-when="videos" id="alc-{{::page.pageId}}" >
+                <div alc-video-thumbnail ng-repeat="video in page.pageContent.videos" class="alc-video-thumbnail"
+                     title="{{::video.title}}"
+                     subtitle="{{::video.subtitle}}"
+                     thumbnail-src="{{::video.thumbnailSrc}}"
+                     embed-src="{{::video.embedSrc}}"
+                     youtube-link="{{::video.youTubeLink}}"
+                     ng-class="{'dark-face': $index == 1}"
+                ></div>
+            </div>
+
+            <div ng-switch-when="fifth-page|sixth-page" ng-switch-when-separator="|"
+                 id="alc-{{::page.pageId}}"
+                 data-translate="content.pages.sixthPage.pageContent.text"
+            ></div>
+        </div>
     </div>
 </div>
+
+
