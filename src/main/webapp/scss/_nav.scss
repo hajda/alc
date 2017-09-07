@@ -7,10 +7,6 @@
         }
     }
 
-    /**
-     * TODO | Try with flexbox.
-     * TODO | BUT beware, because the smoothScrolling to pages may not work that way!
-     */
     position: fixed;
     top: 0;
     @media screen and (orientation: landscape) {
@@ -25,14 +21,11 @@
 
     #alc-menu-container-flex-wrapper {
         position: fixed; // this lets the navbar shrinking
-            @media screen and (max-width: 480px) {
-                // TODO define style
-            }
+        z-index: 9000;
+
         width: 100%;
 
         //@media screen and (max-width: 480px) { // TODO enable and set limits when desktop style is created
-        color: #7a7a7a;
-        z-index: 9900;
         //} // end TODO enable and set limits when desktop style is created
 
         #alc-menu {

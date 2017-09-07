@@ -27,6 +27,7 @@
 
     .alc-video-thumbnail-frame {
         position: relative;
+        z-index: 0;
 
         width: 304px;
         height: 171px;
@@ -93,6 +94,7 @@
                 .alc-video-thumbanil-youtube-link {
                     display: block;
                     position: relative;
+                    z-index: 0;
 
                     width: inherit;
                     height: inherit;

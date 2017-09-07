@@ -567,17 +567,19 @@
                 }
             },
             fifthPage: {
-                pageId: 'fifthPage',
+                pageId: 'fifth-page',
                 pageName: 'fifthPage',
                 pageTitle: 'Fifth Page',
                 pageContent: {
+                    text: 'dfsdsfshdfaiuhasdfiuhdsanfkjdsauifhifhdksafhsiad'
                 }
             },
             sixthPage: {
-                pageId: 'sixthPage',
+                pageId: 'sixth-page',
                 pageName: 'sixthPage',
                 pageTitle: 'Sixth Page',
                 pageContent: {
+                    text: 'dfsdsfshdfaiuhasdfiuhdsanfkjdsauifhifhdksafhsiad'
                 }
             }
         },

@@ -21,15 +21,14 @@
             #alc-menu {
                 position: fixed;
                 right: 0;
-                z-index: 9990;
+                z-index: 9000;
 
 
 
                 .alc-menu-item {
                     float: none;
                     position: relative;
-                    z-index: 9990;
-
+                    z-index: 9000;
                 }
             }
 
@@ -48,7 +47,7 @@
     position: fixed;
     top: $nml-hamburger-menu-medium-fixed-position;
     right: $nml-hamburger-menu-medium-fixed-position * 3;
-    z-index: 9800;
+    z-index: 8000;
 
     box-sizing: border-box;
     width: $nml-hamburger-menu-medium-size;
