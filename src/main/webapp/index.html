@@ -79,7 +79,6 @@
     <!-- build:js app/app.js  -->
     <!-- inject:js -->
     <script src="app/app.module.js"></script>
-    <script src="app/testSections/testSections.state.js"></script>
     <script src="app/services/user/user.service.js"></script>
     <script src="app/services/profiles/profile.service.js"></script>
     <script src="app/services/profiles/page-ribbon.directive.js"></script>
@@ -101,9 +100,7 @@
     <script src="app/layouts/error/error.state.js"></script>
     <script src="app/home/home.state.js"></script>
     <script src="app/home/home.controller.js"></script>
-    <script src="app/gallery/gallery.state.js"></script>
     <script src="app/entities/entity.state.js"></script>
-    <script src="app/deviceMetrics/deviceMetrics.state.js"></script>
     <script src="app/components/util/truncate-words.filter.js"></script>
     <script src="app/components/util/truncate-characters.filter.js"></script>
     <script src="app/components/util/sort-by.directive.js"></script>
@@ -115,68 +112,68 @@
     <script src="app/components/util/data-util.service.js"></script>
     <script src="app/components/util/capitalize.filter.js"></script>
     <script src="app/components/util/base64.service.js"></script>
-    <script src="app/components/testSections/testSections.service.js"></script>
-    <script src="app/components/testSections/testSections.filter.js"></script>
-    <script src="app/components/testSections/testSections.directive.js"></script>
-    <script src="app/components/testSections/testSections.controller.js"></script>
-    <script src="app/components/temporaryContentService/temporaryContentService.service.js"></script>
-    <script src="app/components/stickyTitle/stickyTitle.directive.js"></script>
-    <script src="app/components/stickyTitle/stickyTitle.controller.js"></script>
-    <script src="app/components/smoothScroll/smoothScroll.service.js"></script>
-    <script src="app/components/smoothScroll/smoothScroll.directive.js"></script>
-    <script src="app/components/smoothScroll/smoothScroll.controller.js"></script>
-    <script src="app/components/shows/shows.directive.js"></script>
-    <script src="app/components/shows/shows.controller.js"></script>
-    <script src="app/components/shows/show/show.directive.js"></script>
-    <script src="app/components/shows/show/show.controller.js"></script>
-    <script src="app/components/pages/pages.directive.js"></script>
-    <script src="app/components/pages/pages.controller.js"></script>
-    <script src="app/components/pages/page/page.directive.js"></script>
-    <script src="app/components/pages/page/page.controller.js"></script>
-    <script src="app/components/pages/news/news.directive.js"></script>
-    <script src="app/components/pages/news/news.controller.js"></script>
-    <script src="app/components/pages/news/article/article.directive.js"></script>
-    <script src="app/components/pages/news/article/article.controller.js"></script>
-    <script src="app/components/nav/nav.directive.js"></script>
-    <script src="app/components/nav/nav.controller.js"></script>
     <script src="app/components/login/login.service.js"></script>
     <script src="app/components/login/login.controller.js"></script>
     <script src="app/components/language/language.service.js"></script>
     <script src="app/components/language/language.filter.js"></script>
     <script src="app/components/language/language.controller.js"></script>
     <script src="app/components/language/language.constants.js"></script>
-    <script src="app/components/gallery/videoThumbnail/videoThumbnail.service.js"></script>
-    <script src="app/components/gallery/videoThumbnail/videoThumbnail.filter.js"></script>
-    <script src="app/components/gallery/videoThumbnail/videoThumbnail.directive.js"></script>
-    <script src="app/components/gallery/videoThumbnail/videoThumbnail.controller.js"></script>
-    <script src="app/components/gallery/imageFrame/imageFrame.service.js"></script>
-    <script src="app/components/gallery/imageFrame/imageFrame.directive.js"></script>
-    <script src="app/components/gallery/imageFrame/imageFrame.controller.js"></script>
-    <script src="app/components/gallery/imageFrame/albumCoverFrame/albumCoverFrame.directive.js"></script>
-    <script src="app/components/gallery/gallery.service.js"></script>
-    <script src="app/components/gallery/gallery.filter.js"></script>
-    <script src="app/components/gallery/gallery.directive.js"></script>
-    <script src="app/components/gallery/gallery.controller.js"></script>
-    <script src="app/components/gallery/album/albumItem/albumItem.service.js"></script>
-    <script src="app/components/gallery/album/albumItem/albumItem.filter.js"></script>
-    <script src="app/components/gallery/album/albumItem/albumItem.directive.js"></script>
-    <script src="app/components/gallery/album/albumItem/albumItem.controller.js"></script>
-    <script src="app/components/gallery/album/album.service.js"></script>
-    <script src="app/components/gallery/album/album.filter.js"></script>
-    <script src="app/components/gallery/album/album.directive.js"></script>
-    <script src="app/components/gallery/album/album.controller.js"></script>
     <script src="app/components/form/show-validation.directive.js"></script>
     <script src="app/components/form/pagination.constants.js"></script>
     <script src="app/components/form/minbytes.directive.js"></script>
     <script src="app/components/form/maxbytes.directive.js"></script>
-    <script src="app/components/deviceMetrics/deviceMetrics.service.js"></script>
-    <script src="app/components/deviceMetrics/deviceMetrics.directive.js"></script>
-    <script src="app/components/deviceMetrics/deviceMetrics.controller.js"></script>
-    <script src="app/components/credits/credits.directive.js"></script>
-    <script src="app/components/credits/credits.controller.js"></script>
     <script src="app/components/alert/alert-error.directive.js"></script>
     <script src="app/components/alert/alert.service.js"></script>
     <script src="app/components/alert/alert.directive.js"></script>
+    <script src="app/components/alcComponents/stickyTitle/stickyTitle.directive.js"></script>
+    <script src="app/components/alcComponents/stickyTitle/stickyTitle.controller.js"></script>
+    <script src="app/components/alcComponents/smoothScroll/smoothScroll.service.js"></script>
+    <script src="app/components/alcComponents/smoothScroll/smoothScroll.directive.js"></script>
+    <script src="app/components/alcComponents/smoothScroll/smoothScroll.controller.js"></script>
+    <script src="app/components/alcComponents/nav/nav.directive.js"></script>
+    <script src="app/components/alcComponents/nav/nav.controller.js"></script>
+    <script src="app/components/alcComponents/dev/testSections/testSections.service.js"></script>
+    <script src="app/components/alcComponents/dev/testSections/testSections.filter.js"></script>
+    <script src="app/components/alcComponents/dev/testSections/testSections.directive.js"></script>
+    <script src="app/components/alcComponents/dev/testSections/testSections.controller.js"></script>
+    <script src="app/components/alcComponents/dev/temporaryContentService/temporaryContentService.service.js"></script>
+    <script src="app/components/alcComponents/dev/deviceMetrics/deviceMetrics.service.js"></script>
+    <script src="app/components/alcComponents/dev/deviceMetrics/deviceMetrics.directive.js"></script>
+    <script src="app/components/alcComponents/dev/deviceMetrics/deviceMetrics.controller.js"></script>
+    <script src="app/components/alcComponents/credits/credits.directive.js"></script>
+    <script src="app/components/alcComponents/credits/credits.controller.js"></script>
+    <script src="app/components/alcComponents/contentManagers/shows/shows.directive.js"></script>
+    <script src="app/components/alcComponents/contentManagers/shows/shows.controller.js"></script>
+    <script src="app/components/alcComponents/contentManagers/shows/show/show.directive.js"></script>
+    <script src="app/components/alcComponents/contentManagers/shows/show/show.controller.js"></script>
+    <script src="app/components/alcComponents/contentManagers/pages/pages.directive.js"></script>
+    <script src="app/components/alcComponents/contentManagers/pages/pages.controller.js"></script>
+    <script src="app/components/alcComponents/contentManagers/pages/page/page.directive.js"></script>
+    <script src="app/components/alcComponents/contentManagers/pages/page/page.controller.js"></script>
+    <script src="app/components/alcComponents/contentManagers/gallery/videoThumbnail/videoThumbnail.service.js"></script>
+    <script src="app/components/alcComponents/contentManagers/gallery/videoThumbnail/videoThumbnail.filter.js"></script>
+    <script src="app/components/alcComponents/contentManagers/gallery/videoThumbnail/videoThumbnail.directive.js"></script>
+    <script src="app/components/alcComponents/contentManagers/gallery/videoThumbnail/videoThumbnail.controller.js"></script>
+    <script src="app/components/alcComponents/contentManagers/gallery/imageFrame/imageFrame.service.js"></script>
+    <script src="app/components/alcComponents/contentManagers/gallery/imageFrame/imageFrame.directive.js"></script>
+    <script src="app/components/alcComponents/contentManagers/gallery/imageFrame/imageFrame.controller.js"></script>
+    <script src="app/components/alcComponents/contentManagers/gallery/imageFrame/albumCoverFrame/albumCoverFrame.directive.js"></script>
+    <script src="app/components/alcComponents/contentManagers/gallery/gallery.service.js"></script>
+    <script src="app/components/alcComponents/contentManagers/gallery/gallery.filter.js"></script>
+    <script src="app/components/alcComponents/contentManagers/gallery/gallery.directive.js"></script>
+    <script src="app/components/alcComponents/contentManagers/gallery/gallery.controller.js"></script>
+    <script src="app/components/alcComponents/contentManagers/gallery/album/albumItem/albumItem.service.js"></script>
+    <script src="app/components/alcComponents/contentManagers/gallery/album/albumItem/albumItem.filter.js"></script>
+    <script src="app/components/alcComponents/contentManagers/gallery/album/albumItem/albumItem.directive.js"></script>
+    <script src="app/components/alcComponents/contentManagers/gallery/album/albumItem/albumItem.controller.js"></script>
+    <script src="app/components/alcComponents/contentManagers/gallery/album/album.service.js"></script>
+    <script src="app/components/alcComponents/contentManagers/gallery/album/album.filter.js"></script>
+    <script src="app/components/alcComponents/contentManagers/gallery/album/album.directive.js"></script>
+    <script src="app/components/alcComponents/contentManagers/gallery/album/album.controller.js"></script>
+    <script src="app/components/alcComponents/contentManagers/articles/articles.directive.js"></script>
+    <script src="app/components/alcComponents/contentManagers/articles/articles.controller.js"></script>
+    <script src="app/components/alcComponents/contentManagers/articles/article/article.directive.js"></script>
+    <script src="app/components/alcComponents/contentManagers/articles/article/article.controller.js"></script>
     <script src="app/blocks/interceptor/notification.interceptor.js"></script>
     <script src="app/blocks/interceptor/errorhandler.interceptor.js"></script>
     <script src="app/blocks/interceptor/auth-expired.interceptor.js"></script>
@@ -192,6 +189,9 @@
     <script src="app/blocks/config/alert.config.js"></script>
     <script src="app/app.state.js"></script>
     <script src="app/app.constants.js"></script>
+    <script src="app/alcApp/testSections/testSections.state.js"></script>
+    <script src="app/alcApp/gallery/gallery.state.js"></script>
+    <script src="app/alcApp/deviceMetrics/deviceMetrics.state.js"></script>
     <script src="app/admin/user-management/user-management-dialog.controller.js"></script>
     <script src="app/admin/user-management/user-management-detail.controller.js"></script>
     <script src="app/admin/user-management/user-management-delete-dialog.controller.js"></script>
@@ -237,54 +237,6 @@
     <script src="app/account/activate/activate.controller.js"></script>
     <script src="app/account/account.state.js"></script>
     <!-- endinject -->
-
-    <!-- ALC components -->
-
-    <!-- testSections directive -->
-    <!--<script src="app/testSections/testSections.state.js"></script>-->
-    <!--<script src="app/components/testSections/testSections.service.js"></script>-->
-    <!--<script src="app/components/testSections/testSections.controller.js"></script>-->
-    <!--<script src="app/components/testSections/testSections.directive.js"></script>-->
-    <!--<script src="app/components/testSections/testSections.filter.js"></script>-->
-    <!-- end testSections directive -->
-
-    <!-- testDirective directive -->
-    <!--<script src="app/testDirective/testDirective.js"></script>-->
-    <!--<script src="app/components/testDirective/testDirective.service.js"></script>-->
-    <!--<script src="app/components/testDirective/testDirective.controller.js"></script>-->
-    <!--<script src="app/components/testDirective/testDirective.directive.js"></script>-->
-    <!--<script src="app/components/testDirective/testDirective.filter.js"></script>-->
-    <!-- end testDirective directive -->
-
-    <!-- nav directive -->
-    <!--<script src="app/components/smoothScroll/smoothScroll.service.js"></script>-->
-    <!--<script src="app/components/smoothScroll/smoothScroll.controller.js"></script>-->
-    <!--<script src="app/components/smoothScroll/smoothScroll.directive.js"></script>-->
-    <!-- end smoothScroll directive -->
-
-    <!-- nav directive -->
-    <!--<script src="app/components/nav/nav.controller.js"></script>-->
-    <!--<script src="app/components/nav/nav.directive.js"></script>-->
-    <!-- end nav directive -->
-
-    <!-- pages directive -->
-    <!--<script src="app/components/pages/pages.controller.js"></script>-->
-    <!--<script src="app/components/pages/pages.directive.js"></script>-->
-    <!-- end pages directive -->
-
-
-    <!-- page directive -->
-    <!--<script src="app/components/pages/page/page.controller.js"></script>-->
-    <!--<script src="app/components/pages/page/page.directive.js"></script>-->
-    <!-- end page directive -->
-
-    <!-- article directive -->
-    <!--<script src="app/components/pages/news/article/article.controller.js"></script>-->
-    <!--<script src="app/components/pages/news/article/article.directive.js"></script>-->
-    <!-- end article directive -->
-
-    <!-- end ALC components -->
-
     <!-- endbuild -->
 
 </body>

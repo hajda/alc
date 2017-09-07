@@ -17,7 +17,7 @@
                     controllerAs: 'vm'
                 },
                 'alcnav@': {
-                    templateUrl: 'app/components/nav/nav.template.html',
+                    templateUrl: 'app/components/alcComponents/nav/nav.template.html',
                     controller: 'AlcNavController',
                     controllerAs: 'NavCtrl'
                 }
