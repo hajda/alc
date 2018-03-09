@@ -150,3 +150,7 @@ src/main/webapp/bower_components
 # Downloaded contents
 ######################
 webContents
+src/main/webapp/content/images/img
+
+# temporary crappy backend mocks
+src/main/webapp/app/components/alcComponents/dev/temporaryContentService

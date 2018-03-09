@@ -6,16 +6,12 @@
 
     /* Make the h1 StickyTitle overlap everything */
     position: relative;
-    //z-index: 7000;
+    z-index: 7000;
 
     /* Make the h1 StickyTitle smoothly rotate */
     transition: all .3s ease-out;
 
     /* Make the h1 StickyTitle leave gap on left side for the band logo, but only in landscape */
-    padding-left: $alc-band-logo-width;
-    @media screen and (orientation: landscape) {
-        padding-left: 0px;
-    }
 
     @media screen and (max-width: 480px) {
         padding-left: 15px; // decrease the left gap in mobile
@@ -25,9 +21,12 @@
         }
     }
 
+    &:not(.alc-stick)/*:not(.alc-home-title)*/ {
+        color: $nml-menu-font-color;
+    }
     &.alc-stick {
         position: fixed;
-        z-index: 7000;
+        z-index: 7950;
         top: 0px;
 
         @media screen and (orientation: landscape) {
