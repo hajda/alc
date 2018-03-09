@@ -4,7 +4,7 @@
     angular.module('alcApp')
         .factory('AlcImageFrame', imageFrameService);
 
-    imageFrameService.$inject = [ '$window'];
+    imageFrameService.$inject = ['$window'];
 
     function imageFrameService($window) {
 
@@ -19,10 +19,12 @@
 
             (function init() {
                 switch (attribs.alignImage) {
+                    case 'contain' :
                     case 'fit' : {
                         backgroundSize = 'contain';
                         break;
                     }
+                    case 'cover' :
                     case 'fill' : {
                         backgroundSize = 'cover';
                         break;

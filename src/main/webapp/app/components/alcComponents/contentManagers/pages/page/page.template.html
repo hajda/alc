@@ -4,7 +4,8 @@
         <div class="alc-page-title-bar">
             <h1 class="alc-sticky-title" ng-class="{
                     'alc-stick': sectionTitleClasses[pageIndex] == 1,
-                    'alc-stick alc-swim-on': sectionTitleClasses[pageIndex] == 2
+                    'alc-stick alc-swim-on': sectionTitleClasses[pageIndex] == 2,
+                    'alc-home-title': $parent.$index == 0
                 }"
             >{{::page.pageTitle}}</h1>
         </div>

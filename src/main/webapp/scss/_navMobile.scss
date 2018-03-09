@@ -4,6 +4,7 @@
 #alc-nav-background {
     position: fixed;
     top: 0;
+    z-index: 7900;
 
     width: 100vw;
     height: $alc-nav-height; &.alc-massive-header { @media screen and (orientation: portrait) {

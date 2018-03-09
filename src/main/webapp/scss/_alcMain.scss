@@ -29,7 +29,7 @@ html, body {
 
     &.alc-massive-header {
         @media screen and (orientation: portrait) {
-            margin-top: $massivity;
+            margin-top: $massivity + $alc-nav-height;
         }
     }
     @media screen and (orientation: landscape) {
